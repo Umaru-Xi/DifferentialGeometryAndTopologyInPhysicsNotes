@@ -1,0 +1,440 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+拓扑空间
+\end_layout
+
+\begin_layout Enumerate
+拓扑: 对于点集
+\begin_inset Formula $X$
+\end_inset
+
+,
+\begin_inset Formula $\tau=\{U_{i}|i\in I\}$
+\end_inset
+
+ 是由
+\begin_inset Formula $X$
+\end_inset
+
+中的一系列子集构成的集合, 若
+\begin_inset Formula $(X,\tau)$
+\end_inset
+
+是一个拓扑空间(
+\begin_inset Formula $\tau$
+\end_inset
+
+定义了
+\begin_inset Formula $X$
+\end_inset
+
+的一个拓扑), 则下列条件得到满足:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $X,\phi\in\tau$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $J\subseteq I$
+\end_inset
+
+是指标集
+\begin_inset Formula $I$
+\end_inset
+
+的任意子集, 则
+\begin_inset Formula $\cup_{j\in J}U_{j}\in\tau$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $K\subseteq I$
+\end_inset
+
+是
+\begin_inset Formula $I$
+\end_inset
+
+的任意有限子集, 则
+\begin_inset Formula $\cap_{k\in K}U_{k}\in\tau$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+常用拓扑: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+平庸拓扑: 
+\begin_inset Formula $\tau'=\{\phi,X\}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+离散拓扑: 
+\begin_inset Formula $\tau''=\{U|\forall U\subseteq X\}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+连续: 设
+\begin_inset Formula $X$
+\end_inset
+
+和
+\begin_inset Formula $Y$
+\end_inset
+
+都是拓扑空间, 如果
+\begin_inset Formula $Y$
+\end_inset
+
+中每个开集
+\begin_inset Formula $U$
+\end_inset
+
+的原像
+\begin_inset Formula $f^{\ensuremath{-1}}(U)$
+\end_inset
+
+都是
+\begin_inset Formula $X$
+\end_inset
+
+中的一个开集, 则映射
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+称为连续的;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+映射
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}\in X$
+\end_inset
+
+处连续的定义为: 
+\begin_inset Formula $\left(\forall\varepsilon,\exists\delta,f\left(U_{\delta}(x_{0})\right)\right)\subset U_{\varepsilon}\left(f(x_{0})\right)$
+\end_inset
+
+使得
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\forall U_{\varepsilon}(f(x_{0})),\exists U_{\delta}(x_{0}),x\in U_{\delta}(x_{0})\Rightarrow f(x)\in U_{\varepsilon}(f(x_{0}))$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+成立;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+同胚: 对于映射
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+, 若
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $f^{\ensuremath{-1}}$
+\end_inset
+
+都是连续映射, 则拓扑空间
+\begin_inset Formula $X$
+\end_inset
+
+与
+\begin_inset Formula $Y$
+\end_inset
+
+是同胚的;
+\end_layout
+
+\begin_layout Enumerate
+拓扑的强弱: 设
+\begin_inset Formula $τ_{1,2}$
+\end_inset
+
+ 是
+\begin_inset Formula $X$
+\end_inset
+
+上定义的两个拓扑, 当
+\begin_inset Formula $\tau_{1}\subset\tau_{2}$
+\end_inset
+
+时称拓扑
+\begin_inset Formula $τ_{1}$
+\end_inset
+
+强于拓扑
+\begin_inset Formula $τ_{2}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Hausdorff空间: 空间中任意两个不同的点有不相交的开邻域, 即: 
+\begin_inset Formula $\forall x\neq x'\in X,\exists$
+\end_inset
+
+邻域
+\begin_inset Formula $O:x\in O,x'\in O'$
+\end_inset
+
+, 满足
+\begin_inset Formula $O\cap O'=\phi$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+覆盖及开覆盖: 设
+\begin_inset Formula $(X,\tau)$
+\end_inset
+
+是拓扑空间, 其子集族
+\begin_inset Formula $\{A_{i}|i\in I\}$
+\end_inset
+
+或开集族
+\begin_inset Formula $\{U_{i}|i\in I\}\subseteq\tau$
+\end_inset
+
+构成
+\begin_inset Formula $X$
+\end_inset
+
+的覆盖或开覆盖, 若
+\begin_inset Formula $\cup{}_{i\in I}A_{i}=X$
+\end_inset
+
+或
+\begin_inset Formula $\cup{}_{i\in I}U_{i}=X$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+紧致性: 
+\begin_inset Formula $X$
+\end_inset
+
+(或其子集
+\begin_inset Formula $A$
+\end_inset
+
+)的任一开覆盖中都存在有限的子覆盖
+\begin_inset Formula $\{U_{i}|j\in J\subseteq I,|J|<\infty\}$
+\end_inset
+
+, 称
+\begin_inset Formula $X$
+\end_inset
+
+(或
+\begin_inset Formula $A$
+\end_inset
+
+)紧致;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+连通性: 拓扑空间
+\begin_inset Formula $X$
+\end_inset
+
+称为连通的, 当且仅当该空间不能写成
+\begin_inset Formula $X=X_{1}\cup X_{2}$
+\end_inset
+
+的形式, 这里
+\begin_inset Formula $X_{1}$
+\end_inset
+
+和
+\begin_inset Formula $X_{2}$
+\end_inset
+
+是两个不相交的非空开集
+\begin_inset Formula $X_{1}\cap X_{2}=\varphi$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+不连通的拓扑空间可以用其各个连通分支的并表示;
+\end_layout
+
+\begin_layout Enumerate
+道路连通: 
+\begin_inset Formula $\text{\ensuremath{\forall x,y}\ensuremath{\in X}},\exists f:[0,1]\to X$
+\end_inset
+
+使得
+\begin_inset Formula $f(0)=x,f(1)=y$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+回路: 
+\begin_inset Formula $f:[0,1]\to X$
+\end_inset
+
+使得
+\begin_inset Formula $f(0)=f(1)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+单连通: 若
+\begin_inset Formula $X$
+\end_inset
+
+中的任一条回路都可以连续地形变收缩成一点, 就称
+\begin_inset Formula $X$
+\end_inset
+
+是单连通的;
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

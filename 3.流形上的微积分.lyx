@@ -1,0 +1,2767 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+流形上的微积分
+\end_layout
+
+\begin_layout Enumerate
+流形间的光滑映射: 微分流形维数
+\begin_inset Formula $dimM=m,dimN=n$
+\end_inset
+
+, 映射
+\begin_inset Formula $f:M\to N$
+\end_inset
+
+的坐标表达满足: 
+\begin_inset Formula $M$
+\end_inset
+
+的卡集
+\begin_inset Formula $\{U_{i},\varphi_{i}\}$
+\end_inset
+
+, 
+\begin_inset Formula $N$
+\end_inset
+
+的卡集
+\begin_inset Formula $\{V_{j},\psi_{j}\}$
+\end_inset
+
+, 
+\begin_inset Formula $\psi\circ f\circ\varphi^{-1}:\mathbb{R}^{m}\to\mathbb{R}^{n}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+简化记号: 
+\begin_inset Formula $y=f(x)=\psi\circ f\circ\psi^{-1}(x)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+光滑映射条件: 若从
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+到
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+的映射
+\begin_inset Formula $y=\psi\circ f\circ\varphi^{-1}(x)$
+\end_inset
+
+是
+\begin_inset Formula $\mathbb{C}^{\infty}$
+\end_inset
+
+的, 则称
+\begin_inset Formula $f$
+\end_inset
+
+为可微映射(或光滑映射);
+\end_layout
+
+\begin_layout Enumerate
+可微性与坐标系的选择无关;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+微分同胚映射: 设
+\begin_inset Formula $f:M\to N$
+\end_inset
+
+是流形之间的同胚映射, 若
+\begin_inset Formula $y=\psi\circ f\circ\varphi^{-1}(x)$
+\end_inset
+
+及
+\begin_inset Formula $x=\varphi\circ f^{-1}\circ\psi^{-1}(y)$
+\end_inset
+
+均是
+\begin_inset Formula $\mathbb{C}^{\infty}$
+\end_inset
+
+, 则
+\begin_inset Formula $f$
+\end_inset
+
+是从
+\begin_inset Formula $M$
+\end_inset
+
+到
+\begin_inset Formula $N$
+\end_inset
+
+的微分同胚映射;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+微分同胚的流形: 设
+\begin_inset Formula $f:M\to N$
+\end_inset
+
+是流形之间的微分同胚映射, 则
+\begin_inset Formula $M,N$
+\end_inset
+
+称为微分同胚的流形, 记为
+\begin_inset Formula $M\cong N$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+微分同胚是一种等价关系;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+到自身的微分同胚映射
+\begin_inset Formula $f:M\to M$
+\end_inset
+
+记作
+\begin_inset Formula $Diff(M)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+李群: 若流形
+\begin_inset Formula $G$
+\end_inset
+
+为光滑流形, 且乘法和逆运算都是光滑映射
+\begin_inset Formula $m:G\times G\to G$
+\end_inset
+
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $m(g,h):=gh$
+\end_inset
+
+, 
+\begin_inset Formula $i:G\to G$
+\end_inset
+
+, 
+\begin_inset Formula $i(g)=g^{-1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+等价命题: 设
+\begin_inset Formula $G$
+\end_inset
+
+是具有群结构的光滑流形, 如果映射
+\begin_inset Formula $f:G\times G\to G$
+\end_inset
+
+, 
+\begin_inset Formula $(g,h)\mapsto gh^{-1}$
+\end_inset
+
+是光滑的, 则
+\begin_inset Formula $G$
+\end_inset
+
+构成李群;
+\end_layout
+
+\begin_layout Enumerate
+左作用与右作用: 
+\begin_inset Formula $L_{g},R_{g}:G\to G$
+\end_inset
+
+, 
+\begin_inset Formula $L_{g}(g)=gh$
+\end_inset
+
+, 
+\begin_inset Formula $R_{g}(h)=hg$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+光滑映射(函数): 
+\begin_inset Formula $M$
+\end_inset
+
+上的函数
+\begin_inset Formula $f$
+\end_inset
+
+定义为从
+\begin_inset Formula $M$
+\end_inset
+
+到
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+的光滑映射, 在坐标卡
+\begin_inset Formula $(U,\varphi)$
+\end_inset
+
+上, 函数
+\begin_inset Formula $f$
+\end_inset
+
+的局部表达为
+\begin_inset Formula $m-$
+\end_inset
+
+变元的实值函数
+\begin_inset Formula $f\circ\varphi^{-1}:R^{m}\to R$
+\end_inset
+
+; 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+光滑函数全体以
+\begin_inset Formula $\mathcal{F}(M)$
+\end_inset
+
+记;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+切向量: 
+\begin_inset Formula $M$
+\end_inset
+
+上的向量由某条曲线
+\begin_inset Formula $c:(a,b)\to M$
+\end_inset
+
+的切向描述.
+ 设
+\begin_inset Formula $f:M\to\mathbb{R}$
+\end_inset
+
+是光滑函数, f(c(t))定义了函数
+\begin_inset Formula $(a,b)\to\mathbb{R}$
+\end_inset
+
+.
+ 在
+\begin_inset Formula $t=0\in(a,b)$
+\end_inset
+
+处, 函数
+\begin_inset Formula $f(c(t))$
+\end_inset
+
+的变化率为
+\begin_inset Formula $\frac{df(c(t))}{dt}|_{t=0}=\frac{\partial(f\circ\varphi^{-1})}{\partial x^{\mu}}\frac{dx^{\mu}(c(t))}{dt}|_{t=0}$
+\end_inset
+
+(为了方便, 可以滥用记号
+\begin_inset Formula $\frac{\partial(f\circ\varphi^{-1})}{\partial x^{\mu}}$
+\end_inset
+
+为
+\begin_inset Formula $\frac{df}{dx^{\mu}}$
+\end_inset
+
+);
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+函数空间上的微分算子: 作用在函数上的微分算子定义为
+\begin_inset Formula $X\equiv X^{\mu}\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+, 其中
+\begin_inset Formula $X^{\mu}=\frac{dx^{\mu}(c(t))}{dt}|_{t=0}$
+\end_inset
+
+.
+ 变化率可以记为
+\begin_inset Formula $\frac{df(c(t))}{dt}|_{t=0}=X^{\mu}\frac{\partial f}{\partial x^{\mu}}=X[f]$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+微分算子
+\begin_inset Formula $X=X^{\mu}\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+定义了曲线
+\begin_inset Formula $c(t)$
+\end_inset
+
+在点
+\begin_inset Formula $p=c(0)\in M$
+\end_inset
+
+处的切向量;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+可以作为向量的基, 
+\begin_inset Formula $X^{\mu}$
+\end_inset
+
+为切向量在这个基底下的分量;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+曲线与切向量之间的对应是多对一的: 若
+\begin_inset Formula $c_{1}(t),c_{2}(t)$
+\end_inset
+
+由相同的初始值(
+\begin_inset Formula $c_{1}(0)=c_{2}(0)=p$
+\end_inset
+
+)和变化率(
+\begin_inset Formula $\frac{dx^{\mu}(c_{1}(t))}{dt}|_{t=0}=\frac{dx^{\mu}(c(t))}{dt}|_{t\text{=0}}$
+\end_inset
+
+), 则它们定义的切向量相同;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+切空间: 
+\begin_inset Formula $M$
+\end_inset
+
+中过
+\begin_inset Formula $p$
+\end_inset
+
+点的曲线的等价类
+\begin_inset Formula $1:1$
+\end_inset
+
+对应于
+\begin_inset Formula $p$
+\end_inset
+
+处的一个切向量, 其全体构成切空间
+\begin_inset Formula $T_{p}M$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+切空间的基: 
+\begin_inset Formula $e_{\mu}=\frac{\partial}{\partial x^{\mu}},1\le\mu\le m$
+\end_inset
+
+是
+\begin_inset Formula $T_{p}M$
+\end_inset
+
+的一组基(坐标基), 有
+\begin_inset Formula $\dim T_{p}M=\dim M$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+切向量的构造与坐标系的选择无关: 设
+\begin_inset Formula $p\in U_{i}\cap U_{j}$
+\end_inset
+
+的坐标为
+\begin_inset Formula $x^{\mu}=X^{\mu}\frac{\partial}{\partial x^{\mu}}=\tilde{X}^{\mu}\frac{\partial}{\partial y^{\mu}}\Rightarrow X^{\nu}\frac{\partial y^{\mu}}{\partial x^{\nu}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+不同坐标系下的微分算子相差一个雅可比矩阵;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+基变换: 利用矩阵
+\begin_inset Formula $A=(A_{i}^{\mu})\in GL(m,\mathbb{R})$
+\end_inset
+
+, 可以定义基变换
+\begin_inset Formula $e_{\mu}\to\hat{e_{i}}=A_{i}^{\mu}e_{\mu}$
+\end_inset
+
+.
+ 其中
+\begin_inset Formula $\hat{e_{\mu}}$
+\end_inset
+
+为非坐标基;
+\end_layout
+
+\begin_layout Enumerate
+线性泛函: 对于线性泛函
+\begin_inset Formula $f\in V$
+\end_inset
+
+, 
+\begin_inset Formula $f(\lambda_{1}\cdot v_{1}+\lambda_{2}\cdot v_{2})=\lambda_{1}f(v_{1})+\lambda_{2}f(v_{2})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+对偶空间: 实向量空间
+\begin_inset Formula $V$
+\end_inset
+
+的对偶空间
+\begin_inset Formula $V^{*}$
+\end_inset
+
+定义为线性泛函
+\begin_inset Formula $f:V\to\mathbb{R}$
+\end_inset
+
+的全体.
+ 任意
+\begin_inset Formula $f\in V^{*}$
+\end_inset
+
+完全由它在
+\begin_inset Formula $V$
+\end_inset
+
+中的某组基
+\begin_inset Formula $e_{i}$
+\end_inset
+
+上的值
+\begin_inset Formula $f(e_{i})$
+\end_inset
+
+确定, 
+\begin_inset Formula $v=\sum\limits _{i}\lambda^{i}e_{i}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $f(v)=\sum\limits _{i}\lambda^{i}f(e_{i})$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+与{
+\begin_inset Formula $f(e_{i})$
+\end_inset
+
+}处于同一等价类;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+对偶基: 设
+\begin_inset Formula $e^{i}\in V^{*}$
+\end_inset
+
+满足
+\begin_inset Formula $e^{i}(e_{j})=\delta_{j}^{i}$
+\end_inset
+
+, 则任意
+\begin_inset Formula $f\in V^{*}$
+\end_inset
+
+可写成
+\begin_inset Formula $e^{i}$
+\end_inset
+
+的线性组合, 故{
+\begin_inset Formula ${e^{i}}$
+\end_inset
+
+}形成
+\begin_inset Formula $V^{*}$
+\end_inset
+
+的基, 称为
+\begin_inset Formula $e_{i}$
+\end_inset
+
+的对偶基, 
+\begin_inset Formula $\bar{f}=\sum\limits _{j}f(e_{j})e^{j}$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\bar{f}(e_{i})=\sum\limits _{j}f(e_{i})\delta_{i}^{j}=f(e_{i})$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\bar{f}=f$
+\end_inset
+
+, 
+\begin_inset Formula $\dim V^{*}=\dim V$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+内积空间
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+具有幺正性
+\begin_inset Formula $<e_{i},e_{j}>=\delta_{ij}\Rightarrow<e_{i},\cdot>=e^{i}(\cdot)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+余切空间: 切空间
+\begin_inset Formula $T_{p}M$
+\end_inset
+
+的对偶空间
+\begin_inset Formula $T_{p}^{*}M$
+\end_inset
+
+称为余切空间;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+切空间中坐标基
+\begin_inset Formula $\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+的对偶基记作
+\begin_inset Formula $dx^{\mu}$
+\end_inset
+
+, 
+\begin_inset Formula $dx^{\mu}(\frac{\partial}{\partial x^{\nu}})=<dx^{\mu},\frac{\partial}{\partial x^{\nu}}>=\delta_{\nu}^{\mu}=\frac{\partial x^{\mu}}{\partial x^{\nu}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+对偶基可以作为微分: 
+\begin_inset Formula $<df,\frac{\partial}{\partial x^{\nu}}>=<\frac{\partial f}{\partial x^{\mu}}dx^{\mu},\frac{\partial}{\partial x^{\nu}}>=\frac{\partial f}{\partial x^{\nu}}\Rightarrow<df,X>=X[f]$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+余切空间中的任一元可写成微分
+\begin_inset Formula $1-$
+\end_inset
+
+形式
+\begin_inset Formula $\omega=\omega_{\mu}dx^{\mu}$
+\end_inset
+
+, 
+\begin_inset Formula $<\omega,X^{\nu}\frac{\partial}{\partial x^{\nu}}>=\omega_{\mu}X^{\mu}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+余切空间的元
+\begin_inset Formula $\omega$
+\end_inset
+
+无需参考任何坐标系: 设
+\begin_inset Formula $p\in U_{i}\cap U_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $\omega=\omega_{\mu}dx^{\mu}=\tilde{\omega}_{\nu}dy^{\nu}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $\tilde{\omega}_{\nu}=\frac{\partial x^{\mu}}{\partial y^{\nu}}\omega_{\mu}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+不同坐标系下余切空间的元
+\begin_inset Formula $\omega$
+\end_inset
+
+差一个雅可比矩阵的“逆矩阵”;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+张量积: 向量空间
+\begin_inset Formula $V,W$
+\end_inset
+
+的张量积
+\begin_inset Formula $V\otimes W$
+\end_inset
+
+可以看作
+\begin_inset Formula $V\times W$
+\end_inset
+
+模去一组等价关系: 设
+\begin_inset Formula $(v,w)\in V\times W$
+\end_inset
+
+, 等价关系
+\begin_inset Formula $\begin{cases}
+(v_{1}+v_{2},w)\sim & (v_{1},w)+(v_{2},w)\\
+(v,w_{1}+w_{2})\sim & (v,w_{1})+(v,w_{2})\\
+\lambda\cdot(v,w)= & (\lambda\cdot v,w)=(v,\lambda\cdot w)
+\end{cases}$
+\end_inset
+
+, 则张量积定义为
+\begin_inset Formula $V\otimes W\equiv V\times W/\sim$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+张量积
+\begin_inset Formula $V\otimes W$
+\end_inset
+
+中元素
+\begin_inset Formula $v\otimes w$
+\end_inset
+
+的性质: 
+\begin_inset Formula $\begin{cases}
+(\lambda_{1}v_{1}+\lambda_{2}v_{2})\otimes w= & \lambda_{1}(v_{1}\otimes w)+\lambda_{2}(v_{2}\otimes w)\\
+v\otimes(\lambda_{1}w_{1}+\lambda_{2}w_{2})= & \lambda_{1}(v\otimes w_{1})+\lambda_{2}(v\otimes w_{2})
+\end{cases}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $e_{i},f_{\alpha}$
+\end_inset
+
+分别构成
+\begin_inset Formula $V,W$
+\end_inset
+
+的基, 则
+\begin_inset Formula $e_{i}\otimes f_{\alpha}$
+\end_inset
+
+构成
+\begin_inset Formula $V\otimes W$
+\end_inset
+
+的基, 故
+\begin_inset Formula $\dim V\otimes W=\dim V\otimes\dim W$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(q,r)-$
+\end_inset
+
+型张量空间: 在
+\begin_inset Formula $p\in M$
+\end_inset
+
+点处的
+\begin_inset Formula $(q,r)-$
+\end_inset
+
+型张量空间定义为:
+\begin_inset Formula $T_{p}(M)_{r}^{q}=\otimes_{q}T_{p}(M)\otimes_{r}T_{p}^{*}(M),T\in T_{p}(M)_{r}^{q}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $T_{\nu_{1}...\nu_{r}}^{\mu_{1}...\mu_{q}}\frac{\partial}{\partial x^{\mu_{1}}}\otimes...\otimes\frac{\partial}{\partial x^{\mu_{q}}}\otimes dx^{\nu_{1}}\otimes...\otimes dx^{\nu_{r}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+张量T在坐标变换
+\begin_inset Formula $x^{\mu}\to y^{\mu}=y^{\mu}(x)$
+\end_inset
+
+下是协变的;
+\end_layout
+
+\begin_layout Enumerate
+向量场: 当点
+\begin_inset Formula $p$
+\end_inset
+
+在
+\begin_inset Formula $M$
+\end_inset
+
+中变动, 若相应的向量
+\begin_inset Formula $V$
+\end_inset
+
+光滑地变动, 就称
+\begin_inset Formula $V$
+\end_inset
+
+是
+\begin_inset Formula $M$
+\end_inset
+
+上的一个向量场; 
+\begin_inset Formula $\forall f\in\mathcal{F}(M)\Rightarrow V[f]\in\mathcal{F}[M]$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+向量场
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $p$
+\end_inset
+
+点处的值
+\begin_inset Formula $X|_{p}\in T_{p}(M)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(q,r)-$
+\end_inset
+
+型张量场: 
+\begin_inset Formula $(q,r)-$
+\end_inset
+
+型张量场的全体记作
+\begin_inset Formula $T_{r}^{q}(M)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+微分映射: 光滑映射
+\begin_inset Formula $f:M\to N$
+\end_inset
+
+诱导的微分映射(push forward)
+\begin_inset Formula $f_{*}:T_{p}M\to T_{f(p)}N$
+\end_inset
+
+.
+ 若
+\begin_inset Formula $\forall g\in\mathcal{F}[N],g\circ f\in\mathcal{F}[M]$
+\end_inset
+
+, 
+\begin_inset Formula $\forall V\in T_{p}(M),V[g\circ f]\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $(f_{*}V)[g]\equiv V[g\circ f]$
+\end_inset
+
+(即取坐标卡
+\begin_inset Formula $(U,\varphi),(V,\psi)$
+\end_inset
+
+), 则
+\begin_inset Formula $(f_{*}V)[g\circ\psi^{-1}(y)]=V[g\circ f\circ\varphi^{-1}(x)]$
+\end_inset
+
+(即设
+\begin_inset Formula $\begin{cases}
+x=\varphi(p)\\
+y=\psi(f(p))
+\end{cases}$
+\end_inset
+
+).
+ 其中
+\begin_inset Formula $V\equiv V^{\mu}\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+, 
+\begin_inset Formula $f_{*}V\equiv W^{\alpha}\frac{\partial}{\partial y^{\alpha}}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $W^{\alpha}=V^{\mu}\frac{\partial y^{\alpha}(x)}{\partial x^{\mu}}(g=y^{\alpha})$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+微分映射对高阶逆变张量的作用: 对于
+\begin_inset Formula $f_{*}:\mathcal{T}_{p}(M)_{0}^{q}\to\mathcal{T}_{f(p)}(N)_{0}^{q}$
+\end_inset
+
+, 
+\begin_inset Formula $T=T^{\mu_{1}...\mu_{q}}\frac{\partial}{\partial x^{\mu_{1}}}...\frac{\partial}{\partial x^{\mu_{q}}}\in\mathcal{T}_{p}(M)_{0}^{q}$
+\end_inset
+
+, 则
+\begin_inset Formula $f_{*}T=(f_{*}T)^{\alpha_{1}...\alpha_{q}}\frac{\partial}{\partial y^{\alpha_{1}}}...\frac{\partial}{\partial y^{\alpha_{q}}}\in\mathcal{T}_{f(p)}(N)_{0}^{q}$
+\end_inset
+
+, 
+\begin_inset Formula $(f_{*}T)^{\alpha_{1}...\alpha_{q}}=T^{\mu_{1}...\mu_{q}}\frac{\partial y^{\alpha_{1}}(x)}{\partial x^{\mu_{1}}}...\frac{\partial y^{\alpha_{q}}(x)}{\partial x^{\mu_{q}}}\in\mathcal{T}_{f(p)}(N)_{0}^{q}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+微分映射的链式法则(流形上): 若
+\begin_inset Formula $f:M\to N$
+\end_inset
+
+, 
+\begin_inset Formula $g:N\to P$
+\end_inset
+
+是流形
+\begin_inset Formula $M,N,P$
+\end_inset
+
+之间的光滑映射, 则复合
+\begin_inset Formula $g\circ f:M\to P$
+\end_inset
+
+的微分映射具有链式, 则
+\begin_inset Formula $(g\circ f)_{*}=g_{*}\circ f_{*}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若用
+\begin_inset Formula $x^{\mu},y^{\alpha},z^{\lambda}$
+\end_inset
+
+分别表示
+\begin_inset Formula $p\in M,f(p)\in N,g(f(p))\in P$
+\end_inset
+
+的坐标, 则
+\begin_inset Formula $((g\circ f)_{*}V)^{\lambda}=\frac{\partial z^{\lambda}(y(x))}{\partial x^{\mu}}V^{\mu}=\frac{\partial z^{\lambda}}{\partial y^{\alpha}}\frac{\partial y^{\alpha}}{\partial x^{\mu}}V^{\mu}=\frac{\partial z^{\lambda}}{\partial y^{\alpha}}(f_{*}V)^{\alpha}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+光滑映射诱导的拉回映射: 映射
+\begin_inset Formula $f:M\to N$
+\end_inset
+
+自然诱导出另一个(方向相反的)拉回映射(pull back)
+\begin_inset Formula $f^{*}:T_{f(p)}^{*}N\to T_{p}^{*}M$
+\end_inset
+
+, 
+\begin_inset Formula $<f^{*}\omega,V>\equiv<\omega,f_{*}V>$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+拉回映射对高阶协变张量的作用: 对于
+\begin_inset Formula $f^{*}:\mathcal{T}_{f(p)}(N)_{r}^{0}\to\mathcal{T}_{p}(M)_{r}^{0}$
+\end_inset
+
+, 其分量形式
+\begin_inset Formula $(f^{*}T)_{\mu_{1}...\mu_{r}}=T_{\alpha_{1}...\alpha_{r}}\frac{\partial y^{\alpha_{1}}}{\partial x^{\mu_{1}}}...\frac{\partial y^{\alpha_{r}}}{\partial x^{\mu_{r}}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+拉回映射的分量形式: 
+\begin_inset Formula $(f^{*}\omega)_{\mu}V^{\mu}=\omega_{\alpha}(f_{*}V)^{\alpha}=\omega_{\alpha}\frac{\partial y^{\alpha}}{\partial x^{\mu}}V^{\mu}$
+\end_inset
+
+, 即
+\begin_inset Formula $(f^{*}\omega)_{\mu}=\omega_{\alpha}\frac{\partial y^{\alpha}(x)}{\partial x^{\mu}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+映射法则: 
+\begin_inset Formula $(g\circ f)^{*}=f^{*}\circ g^{*}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+微分映射和拉回映射推广到
+\begin_inset Formula $(q,r)-$
+\end_inset
+
+型张量: 一般而言, 
+\begin_inset Formula $f_{*}$
+\end_inset
+
+和
+\begin_inset Formula $f^{*}$
+\end_inset
+
+不能推广到混合的
+\begin_inset Formula $(q,r)-$
+\end_inset
+
+型张量.
+ 但是当
+\begin_inset Formula $N=M$
+\end_inset
+
+, 
+\begin_inset Formula $f\in Diff(M)$
+\end_inset
+
+时, 因为
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+存在且可微, Jacobian矩阵可逆, 
+\begin_inset Formula $f_{*}$
+\end_inset
+
+和
+\begin_inset Formula $f^{*}$
+\end_inset
+
+描述张量在主动坐标变换下的协变性;
+\end_layout
+
+\begin_layout Enumerate
+子流形:设
+\begin_inset Formula $f:M\to N$
+\end_inset
+
+光滑, 
+\begin_inset Formula $\dim M\le\dim N$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+浸入: 称
+\begin_inset Formula $f$
+\end_inset
+
+为
+\begin_inset Formula $M$
+\end_inset
+
+在
+\begin_inset Formula $N$
+\end_inset
+
+中的浸入, 当
+\begin_inset Formula $f_{*}:T_{p}M\to T_{f(p)}N$
+\end_inset
+
+是单射, 即Jacobian矩阵是满秩的(
+\begin_inset Formula $rankf_{*}=\dim M$
+\end_inset
+
+);
+\end_layout
+
+\begin_layout Enumerate
+嵌入: 若
+\begin_inset Formula $f$
+\end_inset
+
+本身也是单射, 则称
+\begin_inset Formula $M$
+\end_inset
+
+为
+\begin_inset Formula $N$
+\end_inset
+
+的嵌入, 此时
+\begin_inset Formula $f(M)$
+\end_inset
+
+为
+\begin_inset Formula $N$
+\end_inset
+
+的子流形;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+积分曲线: 任取
+\begin_inset Formula $M$
+\end_inset
+
+上的向量场
+\begin_inset Formula $X\in\chi(M)$
+\end_inset
+
+, 该向量场积分曲线
+\begin_inset Formula $x(t)$
+\end_inset
+
+定义为
+\begin_inset Formula $x=x(t)$
+\end_inset
+
+处的切向量恰为
+\begin_inset Formula $X|_{x}$
+\end_inset
+
+, 在坐标卡
+\begin_inset Formula $(U,\varphi)$
+\end_inset
+
+中用分量表示为
+\begin_inset Formula $\frac{dx^{\mu}(t)}{dt}=X^{\mu}(x(t))$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+集分曲线的初始位置记为
+\begin_inset Formula $x_{0}^{\mu}=x^{\mu}(0)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+过给定点的积分曲线存在且唯一: 以
+\begin_inset Formula $\sigma(t,x_{0})$
+\end_inset
+
+表示
+\begin_inset Formula $t=0$
+\end_inset
+
+时初始位置为
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的积分曲线, 则
+\begin_inset Formula $\begin{cases}
+\frac{d}{dt}\sigma^{\mu}(t,x_{0})=X^{\mu}(\sigma(t,x_{0}))\\
+\sigma^{\mu}(0,x_{0})=x_{0}^{\mu}
+\end{cases}$
+\end_inset
+
+, 由一阶常微分方程组解的性质, 可知过给定点的积分曲线是存在且唯一的;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+积分曲线满足
+\begin_inset Formula $\sigma(t,\sigma^{\mu}(s,x_{0}))=\sigma(s+t,x_{0}^{\mu})$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+流: 映射
+\begin_inset Formula $\sigma:\mathbb{R}\times M\to M$
+\end_inset
+
+定义了向量场
+\begin_inset Formula $X\in\chi(M)$
+\end_inset
+
+的流;
+\end_layout
+
+\begin_layout Enumerate
+微分同胚(由积分曲线定义): 固定
+\begin_inset Formula $t\in\mathbb{R}$
+\end_inset
+
+时, 
+\begin_inset Formula $\sigma_{t}(x)\equiv\sigma(t,x)$
+\end_inset
+
+定义了微分同胚
+\begin_inset Formula $\sigma_{t}:M\to N$
+\end_inset
+
+, 即
+\begin_inset Formula $\begin{cases}
+\sigma_{t}(\sigma_{s}(x))=\sigma_{t+s}(x) & \Rightarrow\sigma_{t}\circ\sigma_{s}=\sigma_{t+s}\\
+\sigma_{0}=Id\\
+\sigma_{-t}=(\sigma_{t})^{-1}
+\end{cases}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+单参数子群: {
+\begin_inset Formula $\sigma_{t}|t\in\mathbb{R}$
+\end_inset
+
+}构成
+\begin_inset Formula $\texttt{Diff}(M)$
+\end_inset
+
+的交换子群, 称为单参数子群;
+\end_layout
+
+\begin_layout Enumerate
+无穷小变换: 
+\begin_inset Formula $\sigma_{\varepsilon}^{\mu}(x)\approx x^{\mu}+\varepsilon\frac{d\sigma_{t}^{\mu}(x)}{dt}|_{t=0}=x^{\mu}+\varepsilon X^{\mu}(x)$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+无穷小生成元: 向量场
+\begin_inset Formula $X=X^{\mu}\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+构成变换
+\begin_inset Formula $\sigma_{t}$
+\end_inset
+
+的无穷小生成元;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+向量场的流: 给定向量场
+\begin_inset Formula $X$
+\end_inset
+
+, 与之对应的流
+\begin_inset Formula $\sigma$
+\end_inset
+
+可通过指数映射得到, 
+\begin_inset Formula $\sigma^{\mu}(t,x)=x^{\mu}+\sum\limits _{n=1}^{\infty}\left.\frac{t^{n}}{n!}\left(\frac{d}{ds}\right)^{n}\sigma^{\mu}(s,x)\right|_{s=0}=x^{\mu}+\sum\limits _{n=1}^{\infty}\left.\frac{t^{n}}{n!}X^{n}x^{\mu}\right|_{s=0}$
+\end_inset
+
+
+\begin_inset Formula $=\exp(tX)x^{\mu}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+流的性质: 
+\begin_inset Formula $\begin{cases}
+\sigma^{\mu}(0,x)=\exp(0\cdot X)x^{\mu}=x^{\mu}\\
+\frac{d\sigma^{\mu}(t,x)}{dt}=X\exp(tX)x^{\mu}=\frac{d}{dt}[\exp(tX)x^{\mu}]\\
+\sigma(s,\sigma(t,x))=\sigma(s,\exp(tX)x)=\exp(sX)\exp(tX)x=\exp((s+t)X)x=\sigma(s+t,x)
+\end{cases}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+向量场生成的流: 设
+\begin_inset Formula $\sigma(t,x),\tau(t,x)$
+\end_inset
+
+是由向量场
+\begin_inset Formula $X,Y$
+\end_inset
+
+生成的流, 则
+\begin_inset Formula $\frac{d\sigma^{\mu}(s,x)}{ds}=X^{\mu}(\sigma(s,x))$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{d\tau^{\mu}(t,x)}{dt}=Y^{\mu}(\tau(t,x))$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Lie导数: 设
+\begin_inset Formula $Y|_{x}\in T_{x}M$
+\end_inset
+
+可以沿
+\begin_inset Formula $\sigma(s,x)$
+\end_inset
+
+到临近点
+\begin_inset Formula $x'=\sigma_{\varepsilon}(x)$
+\end_inset
+
+, 
+\begin_inset Formula $Y|_{\sigma_{\varepsilon}(x)}\in T_{\sigma_{\varepsilon}(x)}M$
+\end_inset
+
+, 则Lie导数描述
+\begin_inset Formula $Y$
+\end_inset
+
+的变化为
+\begin_inset Formula $\mathcal{L}_{X}Y=\lim\limits _{\varepsilon\to0}\frac{1}{\varepsilon}\left[(\sigma_{-\varepsilon})_{*}Y|_{\sigma_{\varepsilon}(x)}-Y|_{x}\right]$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Lie导数的坐标表示: 在坐标卡
+\begin_inset Formula $(U,\varphi)$
+\end_inset
+
+中考虑分量
+\begin_inset Formula $\sigma_{\varepsilon}^{\mu}(x)=x^{\mu}+\varepsilon X^{\mu}(x)$
+\end_inset
+
+, 经过无穷小变换后, 用
+\begin_inset Formula $(\sigma_{-\varepsilon})_{*}$
+\end_inset
+
+映回
+\begin_inset Formula $x$
+\end_inset
+
+处, 代入Lie导数得到
+\begin_inset Formula $\mathcal{L}_{X}Y=[X^{\mu}(x)\partial_{\mu}Y^{\nu}(x)-Y^{\mu}(x)\partial_{\mu}X^{\nu}(x)]e_{\nu}|_{x}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Lie括号: 向量场
+\begin_inset Formula $X=X^{\mu}\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+, 
+\begin_inset Formula $Y=Y^{\mu}\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+的Lie括号定义为
+\begin_inset Formula $[X,Y]\equiv XY-YX=[X^{\mu}(x)\partial_{\mu}Y^{\nu}(x)-Y^{\mu}(x)\partial_{\mu}X^{\nu}(x)]e_{\nu}|_{x}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+尽管
+\begin_inset Formula $XY,YX$
+\end_inset
+
+是二阶微分算子, 但其差仍然为一阶算子, 因而仍是向量场;
+\end_layout
+
+\begin_layout Enumerate
+向量场在Lie括号运算下封闭:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+双线性: 
+\begin_inset Formula $\begin{cases}
+[X,c_{1}Y_{1}+c_{2}Y_{2}]=c_{1}[X,Y_{1}]+c_{2}[X,Y_{2}]\\{}
+[c_{1}X_{1}+c_{2}X_{2},Y]=c_{1}[X_{1},Y]+c_{2}[X_{2},Y]
+\end{cases}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+斜对称性: 
+\begin_inset Formula $[X,Y]=-[Y,X]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Jacobi恒等式: 
+\begin_inset Formula $[X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+链式法则: 设
+\begin_inset Formula $X,Y\in\chi(M),f:M\to N$
+\end_inset
+
+, 则
+\begin_inset Formula $f_{*}[X,Y]=[f_{*}X,f_{*}Y]$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Lie导数描述了两个流的非对易性质: 
+\begin_inset Formula $\tau^{\mu}(\delta,\sigma(\varepsilon,x))-\sigma^{\mu}(\varepsilon,\tau(\delta,x))=\varepsilon\delta[X,Y]^{\mu}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+对易: 
+\begin_inset Formula $\mathcal{L}_{X}Y=[X,Y]=0$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\sigma(s,\tau(t,x))=\tau(t,\sigma(s,x))$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+微分
+\begin_inset Formula $1-$
+\end_inset
+
+形式
+\begin_inset Formula $\omega\in\Omega^{-1}(M)$
+\end_inset
+
+的Lie导数
+\begin_inset Formula $\mathcal{L}_{X}\omega\equiv\lim\limits _{\varepsilon\to0}\frac{1}{\varepsilon}\left[(\sigma_{\varepsilon})^{*}\omega|_{\sigma_{\varepsilon}(x)}-\omega|_{x}\right]$
+\end_inset
+
+, 令
+\begin_inset Formula $\omega=\omega_{\mu}dx^{\mu}$
+\end_inset
+
+则可展开为
+\begin_inset Formula $\mathcal{L}_{X}\omega=(X^{\nu}\partial_{\nu}\omega_{\mu}+\partial_{\mu}X^{\nu}\omega_{\nu})dx^{\mu}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+对标量函数
+\begin_inset Formula $f\in\mathcal{F}(M)$
+\end_inset
+
+的Lie导数
+\begin_inset Formula $\mathcal{L}_{X}f\equiv\lim\limits _{\varepsilon\to0}\frac{1}{\varepsilon}[f(\sigma_{\varepsilon}(x))-f(x)]=X^{\mu}(x)\frac{\partial f}{\partial x^{\mu}}=X[f]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+对一般张量场的Lie导数
+\begin_inset Formula $\mathcal{L}_{X}(Y\otimes\omega)=Y\otimes(\mathcal{L}_{X}\omega)+(\mathcal{L}_{X}Y)\otimes\omega$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+爱尔兰根纲领: 利用群理论和仿射几何对几何学进行形式化;
+\end_layout
+
+\begin_layout Enumerate
+微分形式: 设
+\begin_inset Formula $\omega\in T_{p}(M)_{r}^{0}$
+\end_inset
+
+是
+\begin_inset Formula $r-$
+\end_inset
+
+阶协变张量, 
+\begin_inset Formula $P$
+\end_inset
+
+是
+\begin_inset Formula $r$
+\end_inset
+
+个元素的重排
+\begin_inset Formula $P\omega(V_{1},...,V_{r})=\omega(V_{P(1)},...,V_{P(r)})$
+\end_inset
+
+, 即对
+\begin_inset Formula $\omega(e_{\mu_{1}},...,e_{\mu_{1}})=\omega_{\mu_{1}\mu_{2}...\mu_{r}}$
+\end_inset
+
+有
+\begin_inset Formula $P\omega(e_{\mu_{1}},...,e_{\mu_{1}})=\omega_{\mu_{P(1)}...\mu_{P(r)}}$
+\end_inset
+
+.
+ 在
+\begin_inset Formula $M$
+\end_inset
+
+空间中
+\begin_inset Formula $r-$
+\end_inset
+
+阶协变张量
+\begin_inset Formula $\omega$
+\end_inset
+
+在
+\begin_inset Formula $p$
+\end_inset
+
+点的微分形式全体记为
+\begin_inset Formula $\Omega_{p}^{r}(M)$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+对称化: 
+\begin_inset Formula $S\omega=\frac{1}{r!}\sum\limits _{P\in S_{r}}P\omega$
+\end_inset
+
+, 反对称化: 
+\begin_inset Formula $A\omega=\frac{1}{r!}\sum\limits _{P\in S_{r}}\texttt{sgn}(P)P\omega$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+楔积: 对于
+\begin_inset Formula $2-$
+\end_inset
+
+形式的切矢量基有
+\begin_inset Formula $dx^{\mu}\wedge dx^{\nu}=dx^{\mu}\otimes dx^{\nu}-dx^{\nu}\otimes dx^{\mu}$
+\end_inset
+
+, 推广到
+\begin_inset Formula $r-$
+\end_inset
+
+形式
+\begin_inset Formula $dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{r}}=\sum\limits _{P\in S_{r}}\texttt{sgn}(P)dx^{\mu_{P(1)}}\otimes...\otimes dx^{\mu_{P(r)}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+张量场分量的楔积表示: 
+\begin_inset Formula $\omega=\frac{1}{r!}\omega_{\mu_{1}\mu_{2}...\mu_{r}}dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{r}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+楔积的性质: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若指标值有相重复, 则楔积为0;
+\end_layout
+
+\begin_layout Enumerate
+楔积的指标经过重排, 则出现排列的符号因子
+\begin_inset Formula $\texttt{sgn}(P)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+楔积对每个因子都是线性的;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+微分形式的维数: 对
+\begin_inset Formula $\omega\in\Omega_{p}^{r}(M)$
+\end_inset
+
+的独立分量的个数为
+\begin_inset Formula $C_{m}^{r}=\frac{m!}{r!(m-r)!}$
+\end_inset
+
+, 所以
+\begin_inset Formula $\dim\Omega_{p}^{r}(M)=\frac{m!}{r!(m-r)!}=\dim\Omega_{p}^{m-r}(M)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+外积: 由楔积定义映射
+\begin_inset Formula $\wedge:(\omega,\xi)\in\Omega_{p}^{q}(M)\times\Omega_{p}^{r}(M)\to\omega\wedge\xi\in\Omega_{p}^{q+r}(M)$
+\end_inset
+
+, 其运算定义为
+\begin_inset Formula $(\omega\wedge\xi)(V_{1},...,V_{q+r})=$
+\end_inset
+
+
+\begin_inset Formula $\frac{1}{q!r!}\sum\limits _{P\in S_{q+r}}\texttt{sgn}(P)\times$
+\end_inset
+
+
+\begin_inset Formula $\omega(V_{P(1)},...,V_{P(q)})\cdot\xi(V_{P(q+1)},...,V_{P(q+r)})$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+分量形式: 对于张量场
+\begin_inset Formula $\begin{cases}
+\omega=\frac{1}{q!}\omega_{\mu_{1}...\mu_{q}}dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{q}}\\
+\xi=\frac{1}{r!}\xi_{\mu_{q+1}...\mu_{q+r}}dx^{\mu_{q+1}}\wedge...\wedge dx^{\mu_{q+r}}
+\end{cases}$
+\end_inset
+
+, 外积运算可表示为分量形式
+\begin_inset Formula $(\omega\wedge\xi)_{\mu_{1}...\mu_{q+r}}=\frac{(q+r)!}{q!r!}\omega_{\mu_{1}...\mu_{q}}\xi_{\mu_{q+1}...\mu_{q+r}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+结合律: 
+\begin_inset Formula $\forall\xi,\eta,\omega\in\Omega_{p}^{*}(M)$
+\end_inset
+
+, 有
+\begin_inset Formula $(\xi\wedge\eta)\wedge\omega=\xi\wedge(\eta\wedge\omega)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $qr-$
+\end_inset
+
+律: 
+\begin_inset Formula $\forall\xi\in\Omega_{p}^{q}(M),\eta\in\Omega_{p}^{r}(M)$
+\end_inset
+
+, 有
+\begin_inset Formula $\xi\wedge\eta=(-1)^{qr}\eta\wedge\xi$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+奇形式
+\begin_inset Formula $\xi,\eta$
+\end_inset
+
+的外积反对易, 
+\begin_inset Formula $(-1)^{qr}=-1$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $\xi\wedge\eta=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+偶形式
+\begin_inset Formula $\xi$
+\end_inset
+
+与任何形式的
+\begin_inset Formula $\eta$
+\end_inset
+
+的外积对易, 
+\begin_inset Formula $\xi\wedge\eta=\eta\wedge\xi$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+外代数: 微分形式全体在向量空间的运算和外积运算下形成外代数
+\begin_inset Formula $\Omega_{p}^{*}(M)=\otimes{}_{r=0}^{m}\Omega_{p}^{r}(M)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+外导数(外微分): 作用在
+\begin_inset Formula $r-$
+\end_inset
+
+形式上外导数
+\begin_inset Formula $d_{r}:\Omega^{r}(M)\to\Omega^{r+1}(M)$
+\end_inset
+
+定义为
+\begin_inset Formula $\omega=\frac{1}{r!}\omega_{\mu_{1}...\mu_{r}}dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{r}}\in\Omega^{r}(M)$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $d\omega=d_{r}\omega=\frac{1}{r!}\left(\frac{\partial}{\partial x^{\nu}}\omega_{\mu_{1}...\mu_{r}}\right)dx^{\nu}\wedge dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{r}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+莱布尼兹法则: 设
+\begin_inset Formula $\xi\in\Omega^{q}(M),\eta\in\Omega^{r}(M)$
+\end_inset
+
+, 
+\begin_inset Formula $d(\xi\wedge\eta)=d\xi\wedge\eta+(-1)^{q}\xi\wedge d\eta$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+幂零性: 
+\begin_inset Formula $d^{2}=0$
+\end_inset
+
+, 即
+\begin_inset Formula $d_{r+1}d_{r}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f^{*}$
+\end_inset
+
+是协变张量的pull-back:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $d(f^{*}\omega)=f^{*}(d\omega)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f^{*}(\xi\wedge\eta)=(f^{*}\xi)\wedge(f^{*}\eta)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+其他性质: 对于
+\begin_inset Formula $X=X^{\mu}\frac{\partial}{\partial x^{\mu}},Y=Y^{\mu}\frac{\partial}{\partial x^{\mu}}\in\mathcal{X}(M),\omega=\omega_{\mu}dx^{\mu}\in\Omega^{1}(M)$
+\end_inset
+
+, 有
+\begin_inset Formula $d\omega(X,Y)=X[\omega(Y)]-Y[\omega(X)]-\omega([X,Y])$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+对于
+\begin_inset Formula $r-$
+\end_inset
+
+形式: 
+\begin_inset Formula $d\omega(X_{1},...,X_{r+1})=\sum\limits _{i=1}^{r}(-1)^{i+1}X_{i}\omega(X_{1},...,\hat{X_{i}},...,X_{r+1})$
+\end_inset
+
+
+\begin_inset Formula $+\sum\limits _{i<j}(-1)^{i+j}\omega([X_{i},X_{j}],X_{1},...,\hat{X_{i}},...,\hat{X_{j}},...,X_{r+1})$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+内积: 设
+\begin_inset Formula $X\in\mathcal{X}(M)$
+\end_inset
+
+, 定义内积
+\begin_inset Formula $i_{X}:\Omega^{r}(M)\to\Omega^{r-1}(M)$
+\end_inset
+
+, 运算
+\begin_inset Formula $i_{X}\omega(X_{1},...,X_{r-1})=\omega(X,X_{1},...,X_{r-1})$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+分量形式: 
+\begin_inset Formula $i_{X}\omega=\frac{1}{(r-1)!}X^{\nu}\omega_{\nu\mu_{2}...\mu_{r}}dx^{\mu_{2}}\wedge...\wedge dx^{\mu_{r}}$
+\end_inset
+
+
+\begin_inset Formula $=\frac{1}{r!}\sum\limits _{s=1}^{r}X^{\mu_{s}}\omega_{\mu_{1}...\mu_{s}...\mu_{r}}(-1)^{s-1}dx^{\mu_{1}}\wedge...\wedge\widehat{dx^{\mu_{s}}}\wedge...\wedge dx^{\mu_{r}}$
+\end_inset
+
+, 
+\begin_inset Formula $\widehat{dx^{\mu_{s}}}$
+\end_inset
+
+表示抽除该项;
+\end_layout
+
+\begin_layout Enumerate
+微分形式的Lie导数: 
+\begin_inset Formula $L_{X}\omega=(di_{X}+i_{X}d)\omega=(\omega_{\mu}\partial_{\nu}X^{\mu}+X^{\mu}\partial_{\mu}\omega_{\nu})dx^{\nu}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $r-$
+\end_inset
+
+形式: 
+\begin_inset Formula $L_{X}\omega=X^{\nu}\frac{1}{r!}\partial_{\nu}\omega_{\mu_{1}...\mu_{r}}dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{r}}$
+\end_inset
+
+
+\begin_inset Formula $+\sum\limits _{s=1}^{r}\partial_{\mu_{s}}X^{\nu}\frac{1}{r!}\omega_{\mu_{1}...\nu...\mu_{r}}dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{r}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+普遍形式: 
+\begin_inset Formula $L_{X}=di_{X}+i_{X}d$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+复形: 一系列空间之间的一系列线性映射;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+映射的象: 设映射
+\begin_inset Formula $t:V_{1}\to V_{2}$
+\end_inset
+
+, 则记映射
+\begin_inset Formula $t$
+\end_inset
+
+的象为
+\begin_inset Formula $Im(t)\subseteq V_{2}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+映射的核(原象): 设映射
+\begin_inset Formula $t:V_{1}\to V_{2}$
+\end_inset
+
+, 则记映射
+\begin_inset Formula $t$
+\end_inset
+
+的原象为
+\begin_inset Formula $Ker(t)\subseteq V_{1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+de Rham复型: 对一系列空间
+\begin_inset Formula $\Omega^{n}(M)$
+\end_inset
+
+之间有一系列映射
+\begin_inset Formula $d_{n}$
+\end_inset
+
+, 若
+\begin_inset Formula $Imd_{r}\subseteq Kerd_{r+1}$
+\end_inset
+
+, 则称这个复型为de Rham复型;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+恰当形式的拓扑空间可以推出闭形式;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+近辛流形(AS流形): 如果
+\begin_inset Formula $2n$
+\end_inset
+
+维光滑流形
+\begin_inset Formula $M$
+\end_inset
+
+上存在一个
+\begin_inset Formula $2-$
+\end_inset
+
+形式
+\begin_inset Formula $\omega$
+\end_inset
+
+满足非退化条件
+\begin_inset Formula $\omega^{n}:=\omega\wedge...\wedge\omega\neq0$
+\end_inset
+
+, 则称其为近辛流形;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+非退化条件的其他形式: 将
+\begin_inset Formula $2-$
+\end_inset
+
+形式的
+\begin_inset Formula $\omega$
+\end_inset
+
+展开为分量形式
+\begin_inset Formula $\omega=\frac{1}{2}\omega_{\mu\nu}dx^{\mu}\wedge dx^{\nu}$
+\end_inset
+
+, 则非退化性等价于
+\begin_inset Formula $\det[\omega_{\mu\nu}]_{2n\times2n}\neq0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+若定义
+\begin_inset Formula $\texttt{Pf}[\omega_{\mu\nu}]:=\frac{1}{2^{n}n!}\omega_{\mu_{1}\nu_{1}}...\omega_{\mu_{n}\nu_{n}}\epsilon^{\mu_{1}\nu_{1}...\mu_{n}\nu_{n}}$
+\end_inset
+
+, 则
+\begin_inset Formula $\det[\omega]=\texttt{Pf}[\omega]^{2}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+辛流形: 如果AS流形
+\begin_inset Formula $(M,\omega)$
+\end_inset
+
+上的辛形式是闭的
+\begin_inset Formula $d\omega=0$
+\end_inset
+
+, 则称其为辛流形;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+辛同胚: 辛流形
+\begin_inset Formula $(M,\omega)$
+\end_inset
+
+和
+\begin_inset Formula $(M',\omega')$
+\end_inset
+
+之间的微分同胚映射
+\begin_inset Formula $f:M\to M'$
+\end_inset
+
+能够保持辛结构
+\begin_inset Formula $\omega=f^{*}\omega'$
+\end_inset
+
+, 则称该微分同胚映射为辛同胚;
+\end_layout
+
+\begin_layout Enumerate
+自映射保持辛结构的条件: 当辛流形
+\begin_inset Formula $(M,\omega)$
+\end_inset
+
+上的自映射
+\begin_inset Formula $\sigma_{t}:M\to M$
+\end_inset
+
+满足
+\begin_inset Formula $\sigma_{t}^{*}\omega=\omega$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $L_{X}\omega=0$
+\end_inset
+
+时, 则自映射能够保持辛结构;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+可定向性: 设M连通, 
+\begin_inset Formula $p\in U_{i}\cap U_{j}\subset M$
+\end_inset
+
+有两套局部坐标系
+\begin_inset Formula $x^{\mu},y^{\alpha}$
+\end_inset
+
+; 切空间
+\begin_inset Formula $T_{p}M$
+\end_inset
+
+由
+\begin_inset Formula $e_{\mu}=\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+或
+\begin_inset Formula $\tilde{e_{\alpha}}=\frac{\partial}{\partial y^{\alpha}}$
+\end_inset
+
+张成
+\begin_inset Formula $\tilde{e_{\alpha}}=\frac{\partial x^{\mu}}{\partial y^{\alpha}}e_{\mu}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $J=\det[\frac{\partial x^{\mu}}{\partial y^{\alpha}}]$
+\end_inset
+
+的符号确定相对定向性, 
+\begin_inset Formula $\texttt{sgn}J=1$
+\end_inset
+
+时, 
+\begin_inset Formula $e_{\mu},\tilde{e_{\alpha}}$
+\end_inset
+
+保持定向;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+可定向流形: 若M中任意两个有交集的坐标卡
+\begin_inset Formula $U_{i}\cap U_{j}\neq\phi$
+\end_inset
+
+, 存在
+\begin_inset Formula $U_{i}$
+\end_inset
+
+的局部坐标
+\begin_inset Formula $\{x^{\mu}\}$
+\end_inset
+
+和
+\begin_inset Formula $U_{j}$
+\end_inset
+
+的局部坐标
+\begin_inset Formula $\{y^{\alpha}\}$
+\end_inset
+
+, 使得
+\begin_inset Formula $J|_{U_{i}\cap U_{j}}$
+\end_inset
+
+处处为正, 则称
+\begin_inset Formula $M$
+\end_inset
+
+是可定向流形;
+\end_layout
+
+\begin_layout Enumerate
+可定向流形
+\begin_inset Formula $M$
+\end_inset
+
+允许有处处非零的体积形式: 设
+\begin_inset Formula $h(p)>0$
+\end_inset
+
+, 
+\begin_inset Formula $\omega=h(p)dx^{1}\wedge...\wedge dx^{m}\in\Omega^{m}(M)\cong\Omega^{0}(M)=\mathcal{F}(M)$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+坐标变换: 点
+\begin_inset Formula $p\in U_{i}\cup U_{j}$
+\end_inset
+
+的坐标变换定义为
+\begin_inset Formula $\omega=h(p)\frac{\partial x^{1}}{\partial y^{\mu_{1}}}dy^{\mu_{1}}\wedge...\wedge\frac{\partial x^{m}}{\partial y^{\mu_{m}}}dy^{\mu_{m}}=h(p)\det\left(\frac{\partial x^{\mu}}{\partial y^{\nu}}\right)dy^{1}\wedge...\wedge dy^{m}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+不可定向流形上不存在体积形式;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+积分的引入: 当流形
+\begin_inset Formula $M$
+\end_inset
+
+是可定向的时, 才能对其上的微分形式进行积分;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+(TODO)
+\begin_inset Formula $m-$
+\end_inset
+
+元积分: 函数
+\begin_inset Formula $f:M\to\mathbb{R}$
+\end_inset
+
+在流形上积分可以通过体积元
+\begin_inset Formula $\omega$
+\end_inset
+
+定义.
+ 在坐标卡
+\begin_inset Formula $U_{i}$
+\end_inset
+
+上构建积分, 将其定义为普通维欧氏空间中开集
+\begin_inset Formula $\varphi_{i}(U_{i})$
+\end_inset
+
+上的
+\begin_inset Formula $m-$
+\end_inset
+
+元积分
+\begin_inset Formula $\int_{U_{i}}f\omega=\int_{\varphi(U_{i})}f(\varphi_{i}^{-1}(x))h(\varphi_{i}^{-1}(x))dx^{1}...dx^{m}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+存在的问题:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+开覆盖
+\begin_inset Formula $\{U_{i}|i\in I\}$
+\end_inset
+
+的指标集
+\begin_inset Formula $I$
+\end_inset
+
+未必可数, 更不一定是有限集;
+\end_layout
+
+\begin_layout Enumerate
+即使存在有限的开覆盖(如紧致流形), 仍有在
+\begin_inset Formula $U_{i}\cap U_{j}\neq\phi$
+\end_inset
+
+上计重积分的问题;
+\end_layout
+
+\begin_layout Enumerate
+依赖开覆盖的选择, 不仅仅反映
+\begin_inset Formula $(M,\omega,f)$
+\end_inset
+
+的信息;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+单位拆分: 给定
+\begin_inset Formula $M$
+\end_inset
+
+的一个开覆盖
+\begin_inset Formula $\{U_{i}|i\in I\}$
+\end_inset
+
+, 从属于该开覆盖的单位拆分是一族光滑函数
+\begin_inset Formula $\{\varepsilon_{i}:M\to\mathbb{R}|i\in I\}$
+\end_inset
+
+, 满足下列条件:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall p\in M,0\le\varepsilon_{i}(p)\le1$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\texttt{supp}\varepsilon_{i}\subset U_{i}$
+\end_inset
+
+, 即
+\begin_inset Formula $p\notin U_{i}\Rightarrow\varepsilon_{i}(p)=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall p\in M,\exists$
+\end_inset
+
+邻域
+\begin_inset Formula $O_{p}\subset M$
+\end_inset
+
+使
+\begin_inset Formula $\varepsilon_{i}|_{O_{p}}\neq0$
+\end_inset
+
+的函数
+\begin_inset Formula $\varepsilon_{i}$
+\end_inset
+
+仅有有限多个;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall p\in M$
+\end_inset
+
+, 有单位拆分
+\begin_inset Formula $\sum\limits _{i\in I,\varepsilon_{i}(p)\neq0}\varepsilon_{i}(p)=1$
+\end_inset
+
+(有限和);
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f(p)=\sum\limits _{i}f(p)\varepsilon_{i}(p)=\sum\limits _{i}f_{i}(p)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{M}f\omega=\sum\limits _{i}\int_{U_{i}}f_{i}\omega$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+单位拆分的特点:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+不同的开覆盖有不同的单位拆分, 积分值相同;
+\end_layout
+
+\begin_layout Enumerate
+和式中的非零部分构成有限和;
+\end_layout
+
+\begin_layout Enumerate
+在
+\begin_inset Formula $\cap U_{j}\neq\phi$
+\end_inset
+
+上, 如果
+\begin_inset Formula $f_{i}(p)\neq0$
+\end_inset
+
+, 则
+\begin_inset Formula $\sum f_{j}(p)=f(p)$
+\end_inset
+
+, 积分计重的个部分被权重因子
+\begin_inset Formula $\varepsilon_{j}(p)$
+\end_inset
+
+压缩, 总和相当于只计一次;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+仿紧流形: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+细分: 开覆盖
+\begin_inset Formula $\{U_{i}|i\in I\}$
+\end_inset
+
+的一个细分
+\begin_inset Formula $\{V_{j}|j\in J\}$
+\end_inset
+
+指每个
+\begin_inset Formula $V_{j}$
+\end_inset
+
+都是某个
+\begin_inset Formula $U_{i}$
+\end_inset
+
+的子集;
+\end_layout
+
+\begin_layout Enumerate
+局部有限: 开覆盖
+\begin_inset Formula $\{U_{i}|i\in I\}$
+\end_inset
+
+是局部有限的, 如果
+\begin_inset Formula $\forall p\in M,\exists$
+\end_inset
+
+邻域
+\begin_inset Formula $O_{p}$
+\end_inset
+
+使
+\begin_inset Formula $\{i\in I|U_{i}\cap O_{p}\}$
+\end_inset
+
+为有限;
+\end_layout
+
+\begin_layout Enumerate
+仿紧流形意指
+\begin_inset Formula $M$
+\end_inset
+
+上的每个开覆盖都有一个局部有限的细分;
+\end_layout
+
+\begin_layout Enumerate
+紧致流形是仿紧流形的特殊形式;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+单位拆分的条件: Hausdorff空间
+\begin_inset Formula $M$
+\end_inset
+
+允许单位拆分, 当且仅当
+\begin_inset Formula $M$
+\end_inset
+
+是仿紧的;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Hodge星运算: 若
+\begin_inset Formula $M=\mathbb{R}^{m}$
+\end_inset
+
+, 定义线性运算
+\begin_inset Formula $*$
+\end_inset
+
+: 
+\begin_inset Formula $\Omega_{q}(M)\to\Omega^{m-q}(M)$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $^{*}(dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{q}})=\frac{1}{(m-q)!}\epsilon_{\mu_{1}...\mu_{q}\mu_{q+1}...\mu_{m}}dx^{\mu_{q+1}}\wedge...\wedge dx^{\mu_{m}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+分量形式: 对于
+\begin_inset Formula $\omega_{q}=\frac{1}{q!}\omega_{\mu_{1}...\mu_{q}}dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{q}}\in\Omega^{q}(M)$
+\end_inset
+
+, 有
+\begin_inset Formula $^{\text{*}}\omega_{q}=\frac{1}{q!}\omega_{\mu_{1}...\mu_{q}}\ ^{*}(dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{q}})=\frac{1}{q!(m-q)!}\omega_{\mu_{1}...\mu_{q}}\epsilon_{\mu_{q+1}...\mu_{m}}^{\mu_{1}...\mu_{q}}dx^{\mu_{q+1}}\wedge...\wedge dx^{\mu_{m}}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Levi-Civita张量: 
+\begin_inset Formula $\epsilon_{\mu_{1}...\mu_{m}}=\begin{cases}
++1 & \mu_{1},...,\mu_{m}\texttt{是}1,...,m\texttt{的偶排列}\\
+-1 & \mu_{1},...,\mu_{m}\texttt{是}1,...,m\texttt{的奇排列}\\
+0 & \texttt{其他不成排列的形式}
+\end{cases}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+对于
+\begin_inset Formula $\delta_{\mu_{1}...\mu_{s}}^{\nu_{1}...\nu_{s}}=\det\left(\begin{array}{ccc}
+\delta_{\mu_{1}}^{\nu_{1}} & ... & \delta_{\mu_{1}}^{\nu_{s}}\\
+\dot{:} & ^{.}\cdot. & \dot{:}\\
+\delta_{\mu_{s}}^{\nu_{1}} & ... & \delta_{\mu_{s}}^{\nu_{s}}
+\end{array}\right)$
+\end_inset
+
+, Levi-Civita张量满足
+\begin_inset Formula $\epsilon_{\mu_{1}...\mu_{m}}=\delta_{\mu_{1}...\mu_{m}}^{1...m}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+推论: 
+\begin_inset Formula $^{**}\omega_{q}=(-1)^{q(m-q)}\omega_{q}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+顶形式与体积元的关系: 
+\begin_inset Formula $dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{m}}=\epsilon^{\mu_{1}...\mu_{m}}dx^{1}\wedge...\wedge dx^{m}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+向量空间的内积: 可在向量空间
+\begin_inset Formula $\Omega^{q}(M)$
+\end_inset
+
+中引入内积.
+ 对于
+\begin_inset Formula $\begin{cases}
+\alpha_{q}=\frac{1}{q!}a_{\mu_{1}...\mu_{q}}dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{q}}\\
+\beta_{q}=\frac{1}{q!}b_{\mu_{1}...\mu_{q}}dx^{\mu_{1}}\wedge...\wedge dx^{\mu_{q}}
+\end{cases}$
+\end_inset
+
+, 有内积
+\begin_inset Formula $(\alpha_{q},\beta_{q})=\int_{M}\alpha_{q}\wedge^{*}\beta_{q}=\frac{1}{q!}\int_{M}a_{\mu_{1}...\mu_{q}}(x)b_{\mu_{1}...\mu_{q}}(x)dx^{1}\wedge...\wedge dx^{m}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+外导数
+\begin_inset Formula $d$
+\end_inset
+
+的伴随算子: 
+\begin_inset Formula $\delta:\Omega^{q}(M)\to\Omega^{q-1}(M)$
+\end_inset
+
+, 
+\begin_inset Formula $(\alpha_{q},d\beta_{q-1})=(\delta\alpha_{q},\beta_{q-1})\Rightarrow\delta=(-1)^{mq+m+1*}d^{*}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+幂零性: 
+\begin_inset Formula $\delta^{2}=0$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Laplace算子: 
+\begin_inset Formula $\Delta:\Omega^{q}\to\Omega^{q}$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta=(d+\delta)^{2}=d\delta+\delta d$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta\omega_{q}=d_{q-1}\delta_{q}\omega_{q}+\delta_{q+1}d_{q}\omega_{q}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+正定性: 
+\begin_inset Formula $(\omega_{q},\Delta\omega_{q})=(d\omega_{q},d\omega)+(\delta\omega_{q},\delta\omega_{q})\ge0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+调和形式: 
+\begin_inset Formula $\Delta\omega_{q}=0$
+\end_inset
+
+的形式;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Hodge定理: 设
+\begin_inset Formula $M$
+\end_inset
+
+为紧致无边界流形, 其上任一
+\begin_inset Formula $q-$
+\end_inset
+
+形式的
+\begin_inset Formula $\omega_{q}$
+\end_inset
+
+可分解为
+\begin_inset Formula $\omega_{q}=d\alpha_{q-1}+\delta\beta_{q+1}+\gamma_{q},\Delta\gamma_{q}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Stokes定理: 
+\begin_inset Formula $\int_{M}d\omega_{m-1}=\int_{\partial M}\omega_{m-1}$
+\end_inset
+
+;
+\end_layout
+
+\end_body
+\end_document

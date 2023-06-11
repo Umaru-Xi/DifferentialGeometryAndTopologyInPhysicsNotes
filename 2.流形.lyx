@@ -1,0 +1,778 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+流形
+\end_layout
+
+\begin_layout Enumerate
+流形: 设
+\begin_inset Formula $M$
+\end_inset
+
+是一个Hausdorff空间; 
+\begin_inset Formula $\forall p\in M$
+\end_inset
+
+, 如果存在一个开邻域
+\begin_inset Formula $O:p\in O$
+\end_inset
+
+与
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+或
+\begin_inset Formula $\mathbb{C}^{n}$
+\end_inset
+
+中的一个开集同胚, 就称
+\begin_inset Formula $M$
+\end_inset
+
+为实或复的
+\begin_inset Formula $n-$
+\end_inset
+
+维流形;
+\end_layout
+
+\begin_layout Enumerate
+微分流形: 设
+\begin_inset Formula $M$
+\end_inset
+
+是一个流形, 若同时满足:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+存在开覆盖
+\begin_inset Formula $\{U_{i}|i\in I\}$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi_{i}:U_{i}\to\varphi_{i}(U_{i})\in R^{n},\varphi^{-1}:\varphi_{i}(U_{i})\to U_{i}\subset M$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+当
+\begin_inset Formula $U_{i}\cap U_{j}\neq\phi$
+\end_inset
+
+, 下列映射是
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+可微的: 
+\begin_inset Formula $\psi_{ij}=\varphi_{i}\circ\varphi_{j}^{-1}:\varphi_{j}(U_{i}\cap U_{j})\to\varphi_{i}(U_{i}\cap U_{j})$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+等价关系: 关系
+\begin_inset Formula $A\sim B$
+\end_inset
+
+是一个等价关系, 若同时满足:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+自反性: 
+\begin_inset Formula $A\sim A$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+对称性: 
+\begin_inset Formula $A\sim B$
+\end_inset
+
+, 
+\begin_inset Formula $B\sim A$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+传递性: 
+\begin_inset Formula $A\sim B,B\sim C\Rightarrow A\sim C$
+\end_inset
+
+; 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+坐标卡: 
+\begin_inset Formula $(U_{i},\varphi_{i})$
+\end_inset
+
+给出微分流形的坐标卡;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+卡集: 坐标卡的全体称为卡集;
+\end_layout
+
+\begin_layout Enumerate
+坐标邻域: 
+\begin_inset Formula $p\in U_{i}$
+\end_inset
+
+, 则
+\begin_inset Formula $U_{i}$
+\end_inset
+
+为在
+\begin_inset Formula $p$
+\end_inset
+
+点的坐标邻域;
+\end_layout
+
+\begin_layout Enumerate
+坐标函数: 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+, 坐标函数在
+\begin_inset Formula $p$
+\end_inset
+
+点处的值记为
+\begin_inset Formula $x^{\mu}(p),$
+\end_inset
+
+
+\begin_inset Formula $1\le\mu\le n$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+卡集相容: 如果两个卡集的并仍然是卡集, 则称它们相容;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+相容性是一种等价关系;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+上的
+\begin_inset Formula $\vec{y}=(y_{1},y_{2},...,y_{n})$
+\end_inset
+
+到
+\begin_inset Formula $n$
+\end_inset
+
+维单位球面
+\begin_inset Formula $S^{n}:\{x_{i}\in\mathbb{R}^{n+1}|\sum\limits _{i=1}^{n+1}x_{i}^{2}=1\}$
+\end_inset
+
+上
+\begin_inset Formula $\vec{x}=(x_{1},x_{2},...,x_{n},x_{n+1})$
+\end_inset
+
+的球极投影:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+自北极
+\begin_inset Formula $(0,0,...,0,1)$
+\end_inset
+
+的(南多半球)球极投影: 
+\begin_inset Formula $y_{i}=\frac{x_{i}}{1-x_{n+1}}$
+\end_inset
+
+, 
+\begin_inset Formula $||y||^{2}=\frac{1+x_{n+1}}{1-x_{n+1}}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{i}=\frac{2y_{i}}{||y||^{2}+1}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n+1}=\frac{||y||^{2}-1}{||y||^{2}+1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+南多半球: 
+\begin_inset Formula $U_{+}=S^{n}\backslash\{(0,0,...,0,-1)\}=\{(x_{1},x_{2},...,x_{n},x_{n+1}\in S^{n}|x_{n+1}\neq-1)\}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(U_{\pm},\varphi_{\pm})$
+\end_inset
+
+坐标函数: 
+\begin_inset Formula $\varphi_{+}:U_{+}\to\mathbb{R}^{n},(x_{1},...,x_{n+1})\mapsto\left(\frac{x_{1}}{1+x_{n+1}},...,\frac{x_{n}}{1+x_{n+1}}\right)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+自南极
+\begin_inset Formula $(0,0,...,0,-1)$
+\end_inset
+
+的(北多半球)球极投影: 
+\begin_inset Formula $y_{i}=\frac{x_{i}}{1+x_{n+1}}$
+\end_inset
+
+, 
+\begin_inset Formula $||y||^{2}=\frac{1-x_{n+1}}{1+x_{n+1}}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{i}=\frac{2y_{i}}{||y||^{2}+1}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n+1}=\frac{1-||y||^{2}}{1+||y||^{2}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+北多半球: 
+\begin_inset Formula $U_{-}=S^{n}\backslash\{(0,0,...,0,+1)\}=\{(x_{1},x_{2},...,x_{n},x_{n+1}\in S^{n}|x_{n+1}\neq1)\}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(U_{\pm},\varphi_{\pm})$
+\end_inset
+
+坐标函数: 
+\begin_inset Formula $\varphi_{-}:U_{-}\to\mathbb{R}^{n},(x_{1},...,x_{n+1})\mapsto\left(\frac{x_{1}}{1-x_{n+1}},...,\frac{x_{n}}{1-x_{n+1}}\right)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+等价类: 满足同样等价关系的一类关系;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+微分结构: 
+\begin_inset Formula $M$
+\end_inset
+
+所有卡集按照等价类可划分为不同的类, 每个类对应一个微分结构; 即相容的卡集定义了
+\begin_inset Formula $M$
+\end_inset
+
+上相同的微分结构;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+齐次坐标: 在
+\begin_inset Formula $n$
+\end_inset
+
+维实射影空间
+\begin_inset Formula $\mathbb{R}P^{n}$
+\end_inset
+
+中, 由
+\begin_inset Formula $\mathbb{R}^{n+1}$
+\end_inset
+
+中所有过原点的直线
+\begin_inset Formula $(x^{0},x^{1}...,x^{n})\in\mathbb{R}^{n+1}$
+\end_inset
+
+且
+\begin_inset Formula $(x^{0},x^{1}...,x^{n})\neq(0,0,...,0)$
+\end_inset
+
+, 则称该直线为
+\begin_inset Formula $\mathbb{R}P^{n}$
+\end_inset
+
+的齐次坐标;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+非齐次坐标: 设
+\begin_inset Formula $U_{i}$
+\end_inset
+
+为所有过原点的齐次坐标
+\begin_inset Formula $x^{i}\neq0$
+\end_inset
+
+的直线集, 定义非齐次坐标
+\begin_inset Formula $\xi_{(i)}^{j}=\frac{x^{j}}{x^{i}}$
+\end_inset
+
+, 即
+\begin_inset Formula $\xi_{(i)}=(\xi_{(i)}^{0},\xi_{(i)}^{1},...,\xi_{(i)}^{i-1},\xi_{(i)}^{i+1},...,\xi_{(i)}^{n})$
+\end_inset
+
+.
+ 其中
+\begin_inset Formula $\xi_{(i)}^{i}=1$
+\end_inset
+
+被省略;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $U_{i}$
+\end_inset
+
+中的非齐次坐标实际与齐次坐标的选择无关: 若
+\begin_inset Formula $x=\lambda y$
+\end_inset
+
+, 则有
+\begin_inset Formula $\frac{x^{j}}{x^{i}}=\frac{y^{j}}{y^{i}}=\xi_{(i)}^{j}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+非齐次坐标提供了
+\begin_inset Formula $U_{i}$
+\end_inset
+
+与
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+之间的同胚
+\begin_inset Formula $\varphi_{i}:U_{i}\to\mathbb{R}^{n}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+卡集
+\begin_inset Formula $\{U_{i}|0\le i\le n\}$
+\end_inset
+
+的转移函数
+\begin_inset Formula $\psi_{ij}$
+\end_inset
+
+: 当
+\begin_inset Formula $U_{i}\cap U_{j}\neq\phi$
+\end_inset
+
+,
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x=(x^{0},...,x^{n})\in U_{i}\cap U_{j}\begin{cases}
+\varphi_{i}(x)=\xi_{(i)}\in\varphi_{i}(U_{i}\cap U_{j})\\
+\varphi_{j}(x)=\xi_{(i)}\in\varphi_{j}(U_{i}\cap U_{j})
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\psi_{ij}=\varphi_{i}\circ\varphi_{j}^{-1}:\xi_{(j)}^{k}\mapsto\xi_{(i)}^{k}=\frac{x^{j}}{x^{i}}\cdot\xi_{(j)}^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+转移函数
+\begin_inset Formula $\psi_{ij}$
+\end_inset
+
+与
+\begin_inset Formula $U_{i}\cap U_{j}$
+\end_inset
+
+中点的齐次坐标的选择无关: 
+\begin_inset Formula $x=\lambda y\Rightarrow\frac{x^{j}}{x^{i}}=\frac{y^{j}}{y^{i}}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+一般线性群: 
+\begin_inset Formula $n$
+\end_inset
+
+维一般线性群是
+\begin_inset Formula $n\times n$
+\end_inset
+
+维可逆矩阵的集合, 记为
+\begin_inset Formula $GL(n,\mathbb{R})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+笛卡尔积: 
+\begin_inset Formula $X\times Y=\{(x,y)|x\in X\bigwedge y\in Y\}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+流形的乘积: 设
+\begin_inset Formula $M,\tilde{M}$
+\end_inset
+
+分别为
+\begin_inset Formula $n,\tilde{n}$
+\end_inset
+
+维微分流形, 各自定义了坐标卡集
+\begin_inset Formula $\{(U_{i},\varphi_{i})\},\{(\tilde{U}_{\alpha},\tilde{\varphi}_{\alpha})\}$
+\end_inset
+
+.
+ 则乘积流形
+\begin_inset Formula $M\times\tilde{M}$
+\end_inset
+
+是一个
+\begin_inset Formula $n+\tilde{n}$
+\end_inset
+
+维微分流形, 卡集为
+\begin_inset Formula $\{U_{i}\times\tilde{U}_{\alpha},(\varphi_{i},\tilde{\varphi}_{\alpha})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+环面: 
+\begin_inset Formula $T^{n}=S^{1}\times S^{1}\times...\times S^{1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+封闭群的要素:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+单位元: 
+\begin_inset Formula $I$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+逆元: 元
+\begin_inset Formula $A$
+\end_inset
+
+与其逆元
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+之集为单位元
+\begin_inset Formula $I$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+满足结合律的乘法
+\begin_inset Formula $<u,v>$
+\end_inset
+
+: 在该乘法下, 构成封闭群;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+矩阵构成的李群:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+一般线性群
+\begin_inset Formula $GL(n,\mathbb{C})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+幺正群
+\begin_inset Formula $U(n)$
+\end_inset
+
+和
+\begin_inset Formula $U(p,q)$
+\end_inset
+
+: 保持
+\begin_inset Formula $n-$
+\end_inset
+
+维复向量空间
+\begin_inset Formula $V\cong\mathbb{C}^{n}$
+\end_inset
+
+的内积不变的变换;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $<u,v>=\bar{u}^{T}\cdot v=\sum\limits _{j=1}^{n}\bar{u}_{j}v^{j}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $<u,v>_{p,q}=-\sum\limits _{i=1}^{p}\bar{u_{i}}v^{i}+\sum\limits _{j=1}^{q}\bar{u}_{p+j}v^{p+j}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+特殊幺正群
+\begin_inset Formula $SU(p,q)=U(p,q)\cap SL(n,\mathbb{C})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+正交群
+\begin_inset Formula $O(n)$
+\end_inset
+
+: 在实数集上保持欧几里得内积不变的变换;
+\end_layout
+
+\begin_layout Enumerate
+特殊正交群
+\begin_inset Formula $SO(p,q)=O(p,q)\cap SL(n,\mathbb{R})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+辛群
+\begin_inset Formula $Sp(2n,\mathbb{C})$
+\end_inset
+
+: 保持向量
+\begin_inset Formula $y,z\in\mathbb{C}^{2n}$
+\end_inset
+
+或
+\begin_inset Formula $\mathbb{R}^{2n}$
+\end_inset
+
+的斜积
+\begin_inset Formula $\omega(y,z)$
+\end_inset
+
+不变的变换:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\omega(w,z)=\sum\limits _{j=1}^{n}(w_{j}z_{j}'-w_{j}'z_{j})$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+幺正辛群
+\begin_inset Formula $USp(2n)=Sp(2n,\mathbb{C})\cap U(2n)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+矩阵的指数映射: 设
+\begin_inset Formula $A$
+\end_inset
+
+是
+\begin_inset Formula $n\times n$
+\end_inset
+
+矩阵, 指数
+\begin_inset Formula $e^{A}$
+\end_inset
+
+来自幂级数
+\begin_inset Formula $e^{A}=1+A+\frac{A^{2}}{2!}+...=\sum\limits _{k=0}^{\infty}\frac{A^{k}}{k!}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Pauli矩阵: 
+\begin_inset Formula $\sigma_{k}=\left(\begin{array}{cc}
+\delta_{a3} & \delta_{a1}-i\delta_{a2}\\
+\delta_{a1}+i\delta_{a2} & -\delta_{a3}
+\end{array}\right),k=0,1,2,3$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Lie群流形: 
+\begin_inset Formula $(\xi_{a})_{a=1,...,dimG}\in\mathbb{R}^{dimG}$
+\end_inset
+
+,通过指数映射
+\begin_inset Formula $g=\exp\left(i\sum\limits _{a=1}^{dimG}\xi_{a}T^{a}\right)\in G,T^{a}\in g$
+\end_inset
+
+;
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1450 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+同伦群
+\end_layout
+
+\begin_layout Enumerate
+保基连续映射: 设
+\begin_inset Formula $\Sigma,X$
+\end_inset
+
+是拓扑空间, 分别取定“基点”
+\begin_inset Formula $\sigma_{0}\in\Sigma,x_{0}\in X$
+\end_inset
+
+, 若映射
+\begin_inset Formula $f:\Sigma\to X$
+\end_inset
+
+是保持基点的, 即
+\begin_inset Formula $f$
+\end_inset
+
+满足
+\begin_inset Formula $f(\sigma_{0})=x_{0}$
+\end_inset
+
+, 则称其为保基连续映射;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+保基连续映射
+\begin_inset Formula $f:\Sigma\to X$
+\end_inset
+
+全体记作
+\begin_inset Formula $X^{\Sigma}=\{f|f:\Sigma\to X,f(\sigma_{0})=x_{0}\}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+保基映射
+\begin_inset Formula $f:\Sigma_{2}\to\Sigma_{1}$
+\end_inset
+
+及
+\begin_inset Formula $g:X_{1}\to X_{2}$
+\end_inset
+
+诱导了
+\begin_inset Formula $X_{1}^{\Sigma_{1}}\to(g^{f})\to X_{2}^{\Sigma_{2}}$
+\end_inset
+
+, 
+\begin_inset Formula $g^{f}:X_{1}^{\Sigma_{1}}\to X_{2}^{\Sigma_{2}},\forall h\in X_{1}^{\Sigma_{1}},g^{f}(h)=g\circ h\circ f$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+映射
+\begin_inset Formula $g^{f}$
+\end_inset
+
+的基本性质:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $f':\Sigma_{3}\to\Sigma_{2},g':X_{2}\to X_{3}$
+\end_inset
+
+是保基映射, 则
+\begin_inset Formula $g'^{f'}\circ g^{f}=(g'\circ g)^{f\circ f'}:X_{1}^{\Sigma_{1}}\to X_{3}^{\Sigma_{3}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $f_{1}\simeq f_{0}:\Sigma_{2}\to\Sigma_{1},g_{1}\simeq g_{0}:X_{1}\to X_{2}$
+\end_inset
+
+, 则
+\begin_inset Formula $g_{1}^{f_{1}}\simeq g_{0}^{f_{0}}:X_{1}^{\Sigma_{1}}\to X_{2}^{\Sigma_{2}}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+如果
+\begin_inset Formula $\Sigma_{1}\simeq\Sigma_{2},X_{1}\simeq X_{2}$
+\end_inset
+
+, 那么
+\begin_inset Formula $X_{1}^{\Sigma_{1}}\simeq X_{2}^{\Sigma_{2}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma_{1}\simeq\Sigma_{2}\Rightarrow\begin{cases}
+f:\Sigma_{2}\to\Sigma_{1}\\
+f':\Sigma_{1}\to\Sigma_{2}
+\end{cases}$
+\end_inset
+
+, 
+\begin_inset Formula $f\circ f'\simeq Id,f'\circ f\simeq Id$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X_{1}\simeq X_{2}\Rightarrow\begin{cases}
+g:X_{2}\to X_{1}\\
+g':X_{1}\to X_{2}
+\end{cases}$
+\end_inset
+
+, 
+\begin_inset Formula $g\circ g'\simeq Id,g'\circ g\simeq Id$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g^{f}:X_{1}^{\Sigma_{1}}\to X_{2}^{\Sigma_{2}},g'^{f'}:X_{2}^{\Sigma_{2}}\to X_{1}^{\Sigma_{1}}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+道路空间总是可缩的: 
+\begin_inset Formula $X^{[0,1]}\simeq X^{\{1\}}\simeq\{f_{0}\}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+加接: 
+\begin_inset Formula $X$
+\end_inset
+
+在
+\begin_inset Formula $f(Z)$
+\end_inset
+
+处与
+\begin_inset Formula $Y$
+\end_inset
+
+的加接定义为
+\begin_inset Formula $X\cup Y/\sim$
+\end_inset
+
+, 记为
+\begin_inset Formula $X\cup_{f}Y$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+楔积: 取基点
+\begin_inset Formula $x\in X,y\in Y$
+\end_inset
+
+, 楔积
+\begin_inset Formula $X\vee Y=(X\cup Y)/(x\sim y)$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $X\vee Y$
+\end_inset
+
+可看作乘积空间
+\begin_inset Formula $X\times Y$
+\end_inset
+
+的子集
+\begin_inset Formula $(X\times\{y\})\cup(\{x\}\times Y)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+给定拓扑空间
+\begin_inset Formula $X_{j},Y_{j}$
+\end_inset
+
+及连续保基映射
+\begin_inset Formula $f_{j}:X_{j}\to Y_{j}(j\in J)$
+\end_inset
+
+, 
+\begin_inset Formula $\exists\vee_{j\in J}f_{j}:\vee_{j\in J}X_{j}\to\vee_{j\in J}Y_{j}$
+\end_inset
+
+具有下面的性质:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $g_{j};Y_{j}\to Z_{j}(\forall j\in J)$
+\end_inset
+
+是连续保基的, 则
+\begin_inset Formula $(\vee_{j\in J}g_{j})\circ(\vee_{j\in J}f_{j})=\vee_{j\in J}(g_{i}\circ f_{j})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $f_{i}\simeq g_{j}:X_{j}\to Y_{j}$
+\end_inset
+
+是同伦等价的映射
+\begin_inset Formula $(\forall j\in J)$
+\end_inset
+
+, 那么
+\begin_inset Formula $\vee_{j\in J}f_{j}\simeq\vee_{j\in J}g_{j}:\vee_{j\in J}X_{j}\to\vee_{j\in J}Y_{j}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $\forall j\in J$
+\end_inset
+
+, 
+\begin_inset Formula $X_{j}\simeq Y_{j}$
+\end_inset
+
+是同伦型, 则
+\begin_inset Formula $\vee_{j\in J}X_{j}\simeq\vee_{j\in J}Y_{j}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+在
+\begin_inset Formula $X\vee Y$
+\end_inset
+
+与乘积空间
+\begin_inset Formula $X\times Y$
+\end_inset
+
+的某子集之间存在同胚
+\begin_inset Formula $\phi:X\vee Y\to(X\times\{y\})\cup(\{x\}\times Y)$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+映射
+\begin_inset Formula $\phi$
+\end_inset
+
+是满射且单射, 因此是一对一映射, 故存在逆映射
+\begin_inset Formula $\phi^{-1}:(X\times\{y\})\cup(\{x\}\times Y)\to X\vee Y$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+归纳积(旋积): 拓扑空间
+\begin_inset Formula $X,Y$
+\end_inset
+
+的旋积定义为
+\begin_inset Formula $X\wedge Y=(X\times Y)/(X\vee Y)$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S^{n}\wedge S^{1}\cong S^{n+1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B^{n}\wedge S^{1}\cong B^{n+1}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+给定拓扑空间
+\begin_inset Formula $X_{j},Y_{j}$
+\end_inset
+
+及连续保基映射
+\begin_inset Formula $f_{j}:X_{j}\to Y_{j}(j=1,2),\exists f_{1}\wedge f_{2}:X_{1}\wedge X_{2}\to Y_{1}\wedge Y_{2}$
+\end_inset
+
+具有以下性质:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $g_{j}:Y_{j}\to Z_{j}(j=1,2)$
+\end_inset
+
+, 则
+\begin_inset Formula $(f_{1}\wedge f_{2})\circ(g_{1}\wedge g_{2})=(f_{1}\circ g_{1})\wedge(f_{2}\circ g_{2})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+如果
+\begin_inset Formula $f_{j}\simeq g_{j}:X_{j}\to Y_{j}$
+\end_inset
+
+是同伦等价的映射
+\begin_inset Formula $(j=1,2)$
+\end_inset
+
+, 那么
+\begin_inset Formula $f_{1}\wedge f_{2}\simeq g_{1}\wedge g_{2}:X_{1}\wedge X_{2}\to Y_{1}\wedge Y_{2}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+推论: 若
+\begin_inset Formula $X_{j}\simeq Y_{j}(j=1,2)$
+\end_inset
+
+同伦, 则
+\begin_inset Formula $X_{1}\wedge X_{2}\simeq Y_{1}\wedge Y_{2}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+推论: 任意的
+\begin_inset Formula $X$
+\end_inset
+
+与可缩空间
+\begin_inset Formula $Y$
+\end_inset
+
+的归纳积
+\begin_inset Formula $X\wedge Y$
+\end_inset
+
+是可缩的;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+约化角锥: 任意拓扑空间
+\begin_inset Formula $X$
+\end_inset
+
+的约化角锥
+\begin_inset Formula $c(X)=X\wedge[0,1]$
+\end_inset
+
+是可缩的;
+\end_layout
+
+\begin_layout Enumerate
+约化双角锥: 拓扑空间
+\begin_inset Formula $X$
+\end_inset
+
+的约化双角锥
+\begin_inset Formula $s(X)=X\wedge S^{1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+分配律: 设
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+为拓扑空间, 则有
+\begin_inset Formula $(X\vee Y)\wedge Z\cong(X\wedge Y)\vee(Y\wedge Z)$
+\end_inset
+
+, 推广后得到
+\begin_inset Formula $\left(\vee_{j\in J}X_{j}\right)\wedge Y\cong\vee_{j\in J}(X_{j}\wedge Y_{j})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+结合律: 若(a)-(c)满足至少项, 则
+\begin_inset Formula $(X\wedge Y)\vee Z\cong X\wedge(Y\vee Z)$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $X,Y$
+\end_inset
+
+紧致, 且
+\begin_inset Formula $X$
+\end_inset
+
+为Hausdorff空间;
+\end_layout
+
+\begin_layout Enumerate
+或者, 
+\begin_inset Formula $Y,Z$
+\end_inset
+
+紧致, 且Z为Hausdorff空间;
+\end_layout
+
+\begin_layout Enumerate
+或者, 
+\begin_inset Formula $X,Z$
+\end_inset
+
+是局部紧致的Haussdorff空间;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+结合律推论: 
+\begin_inset Formula $S^{n}\wedge S^{m}\cong S^{n+m}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+给定拓扑空间
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $X,Y$
+\end_inset
+
+为Hausdorff空间, 则
+\begin_inset Formula $Z^{X\vee Y}\cong Z^{X}\times Z^{Y}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $X$
+\end_inset
+
+为Hausdorff空间, 则
+\begin_inset Formula $(Y\times Z)^{X}\cong Y^{X}\times Z^{X}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $X,Y$
+\end_inset
+
+是紧致的Hausdroff空间, 则
+\begin_inset Formula $Z^{X\wedge Y}\cong(Z^{Y})^{X}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+圈空间: 
+\begin_inset Formula $X$
+\end_inset
+
+的圈空间定义为
+\begin_inset Formula $\Omega(X)=X^{S^{1}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\Omega(\Omega(...\Omega(X)...))\cong X^{S^{1}\wedge S^{1}...\wedge S^{1}}\cong X^{S^{n}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Omega(X)^{Y}=(X^{S^{1}})^{Y}\cong X^{Y\wedge S^{1}}=X^{s(Y)}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+同伦等价类: 保基映射
+\begin_inset Formula $f,g:\Sigma\to X$
+\end_inset
+
+间的同伦
+\begin_inset Formula $f\simeq g$
+\end_inset
+
+在
+\begin_inset Formula $X^{\Sigma}$
+\end_inset
+
+中确定了一个等价关系, 其同伦等价类
+\begin_inset Formula $[f]$
+\end_inset
+
+形成的空间为
+\begin_inset Formula $[\Sigma,X]=\{[f]|f\in X^{\Sigma}\}=X^{\Sigma}/\simeq$
+\end_inset
+
+, 称为同伦类空间;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n-$
+\end_inset
+
+阶同伦群: 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\pi_{n}(X)=[S^{n},X]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $f:Y_{0}\to Y_{1}$
+\end_inset
+
+是保基连续映射, 则
+\begin_inset Formula $f$
+\end_inset
+
+又到了
+\begin_inset Formula $f_{\bullet}:[X,Y_{0}]\to[X,Y_{1}]$
+\end_inset
+
+, 具有如下性质:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $f\simeq f':Y_{0}\to Y_{1}$
+\end_inset
+
+, 则
+\begin_inset Formula $f_{\bullet}=f'_{\bullet};[X,Y_{0}]\to[X,Y_{1}]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+恒等映射
+\begin_inset Formula $1:Y\to Y$
+\end_inset
+
+诱导的
+\begin_inset Formula $1_{\bullet}:[X,Y]\to[X,Y]$
+\end_inset
+
+是恒等映射;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $g:Y_{1}\to Y_{2}$
+\end_inset
+
+, 则
+\begin_inset Formula $(g\circ f)_{\bullet}=g_{\bullet}\circ f_{\bullet}:[X,Y_{0}]\to[X,Y_{1}]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+推论: 如果
+\begin_inset Formula $f:Y_{0}\to Y_{1}$
+\end_inset
+
+是一个同伦等价性映射(即存在
+\begin_inset Formula $g:Y_{1}\to Y_{0}$
+\end_inset
+
+使
+\begin_inset Formula $f\circ g\simeq1,g\circ f\simeq1$
+\end_inset
+
+), 那么
+\begin_inset Formula $f$
+\end_inset
+
+所诱导的映射
+\begin_inset Formula $f_{\bullet}:[X,Y_{0}]\to[X,Y_{1}]$
+\end_inset
+
+是
+\begin_inset Formula $1:1$
+\end_inset
+
+的;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+若对于一切拓扑空间
+\begin_inset Formula $X$
+\end_inset
+
+, 
+\begin_inset Formula $f_{\bullet}:[X,Y_{0}]\to[X,Y_{1}]$
+\end_inset
+
+都是
+\begin_inset Formula $1:1$
+\end_inset
+
+的, 那么
+\begin_inset Formula $f:Y_{0}\to Y_{1}$
+\end_inset
+
+是同伦等价性映射, 
+\begin_inset Formula $Y_{0}\simeq Y_{1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Whitehead定理: 
+\begin_inset Formula $\pi_{n}(Y_{0})\cong\pi_{n}(Y_{1}),\forall n\ge0\Rightarrow Y_{0}\simeq Y_{1}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+映射
+\begin_inset Formula $f:X_{0}\to X_{1}$
+\end_inset
+
+诱导的
+\begin_inset Formula $f^{\bullet}:[X_{1},Y]\to[X_{0},Y]$
+\end_inset
+
+具有下列性质:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $f\simeq f':X_{0}\to X_{1}$
+\end_inset
+
+, 则
+\begin_inset Formula $f^{\bullet}=f'^{\bullet}:[X_{1},Y]\to[X_{0},Y]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+恒等
+\begin_inset Formula $1:X\to X$
+\end_inset
+
+诱导的
+\begin_inset Formula $1^{\bullet}:[X,Y]\to[X,Y]$
+\end_inset
+
+是恒等的;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $g:X_{1}\to X_{2}$
+\end_inset
+
+, 则
+\begin_inset Formula $(g\circ f)^{\bullet}=f^{\bullet}\circ g^{\bullet}:[X_{2},Y]\to[X_{0},Y]$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $f:X_{0}\to X_{1}$
+\end_inset
+
+对一切拓扑空间
+\begin_inset Formula $Y$
+\end_inset
+
+给出
+\begin_inset Formula $1:1$
+\end_inset
+
+对应的
+\begin_inset Formula $f^{\bullet}:[X_{1},Y]\to[X_{0},Y]$
+\end_inset
+
+, 则
+\begin_inset Formula $f$
+\end_inset
+
+是同伦等价性映射
+\begin_inset Formula $X_{0}\simeq X_{1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+当
+\begin_inset Formula $n\ge1$
+\end_inset
+
+时, 
+\begin_inset Formula $S^{n}$
+\end_inset
+
+是
+\begin_inset Formula $AH'I$
+\end_inset
+
+
+\begin_inset Formula $-$
+\end_inset
+
+空间
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $\pi_{n}(X)=[S^{n},X]$
+\end_inset
+
+具有群结构(这个群结构在
+\begin_inset Formula $n>1$
+\end_inset
+
+时是交换群);
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $Y$
+\end_inset
+
+是局部紧致的Hausdorff空间, 则存在
+\begin_inset Formula $1:1$
+\end_inset
+
+映射
+\begin_inset Formula $[X\wedge Y,Z]\leftrightarrow[X,Z^{Y}]$
+\end_inset
+
+; 在有群结构的情形下, 该映射为群同构
+\begin_inset Formula $[X\wedge Y,Z]\cong[X,Z^{Y}]$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $[s(X),Y]\cong[X,\Omega(Y)]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[S^{n}\wedge Y,Z]\cong[S^{n},Z^{Y}]=\pi_{n}(Z^{Y})$
+\end_inset
+
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\pi_{0}(Z^{Y})=[Y,Z]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+一些记号: 设
+\begin_inset Formula $y\in Y$
+\end_inset
+
+为基点, 
+\begin_inset Formula $f:Y\to Z,g:Y'\to Z'$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+恒等映射: 
+\begin_inset Formula $1=1_{Y}:Y\to Y$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+含入映射: 
+\begin_inset Formula $i_{1},i_{2}:Y\to Y\times Y$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+常值映射: 
+\begin_inset Formula $e_{Y}:Y\to Y$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+对角映射: 
+\begin_inset Formula $\Delta_{Y}:Y\to Y\times...\times Y$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+直积映射: 
+\begin_inset Formula $f\times g:Y\times Y'\to Z\times Z'$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+投影: 
+\begin_inset Formula $p_{1},p_{2}:X\vee X\to X,\begin{cases}
+p_{1}(x_{1},x_{2})=x_{1}\\
+p_{2}(x_{1},x_{2})=x_{2}
+\end{cases}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+折迭: 
+\begin_inset Formula $\nabla_{X}:X\vee X\to X,\nabla_{X}(x,x_{0})=\nabla_{X}(x_{0},x)=x$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $H-$
+\end_inset
+
+空间(Hopf空间): 对拓扑空间
+\begin_inset Formula $Y$
+\end_inset
+
+, 若存在一个映射
+\begin_inset Formula $m:Y\times Y\to Y$
+\end_inset
+
+满足条件
+\begin_inset Formula $m\circ i_{1}\simeq m\circ i_{2}\simeq1_{Y}$
+\end_inset
+
+, 则
+\begin_inset Formula $Y$
+\end_inset
+
+被称为
+\begin_inset Formula $H-$
+\end_inset
+
+空间;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+用
+\begin_inset Formula $m$
+\end_inset
+
+定义
+\begin_inset Formula $Y$
+\end_inset
+
+中两点的乘法, 要求乘法单位元为基点
+\begin_inset Formula $\forall y,y'\in Y,y\cdot y'=m(y,y')\in Y$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+结合的
+\begin_inset Formula $H-$
+\end_inset
+
+空间(
+\begin_inset Formula $AH-$
+\end_inset
+
+空间): 若
+\begin_inset Formula $m$
+\end_inset
+
+满足
+\begin_inset Formula $m\circ(m\times1_{Y})\simeq m\circ(1_{Y}\times m):Y\times Y\times Y\to Y$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+有逆元的
+\begin_inset Formula $H-$
+\end_inset
+
+空间(
+\begin_inset Formula $HI-$
+\end_inset
+
+空间): 若存在逆运算
+\begin_inset Formula $u:Y\to Y$
+\end_inset
+
+满足
+\begin_inset Formula $m\circ(u\times1_{Y})\circ\Delta_{Y}\simeq m\circ(1_{Y}\times u)\circ\Delta_{Y}\simeq e_{Y}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $Y$
+\end_inset
+
+是任意拓扑空间, 
+\begin_inset Formula $Y$
+\end_inset
+
+为
+\begin_inset Formula $AHI-$
+\end_inset
+
+空间, 则
+\begin_inset Formula $[X,Y]$
+\end_inset
+
+可以赋予一个群结构;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $Y$
+\end_inset
+
+为
+\begin_inset Formula $AHI-$
+\end_inset
+
+空间, 有任一连续映射
+\begin_inset Formula $g:X_{0}\to X_{1}$
+\end_inset
+
+诱导的
+\begin_inset Formula $g^{\bullet}:[X_{1},Y]\to[X_{0},Y]$
+\end_inset
+
+是群同态;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+特别的: 当
+\begin_inset Formula $g:X_{0}\simeq X_{1}$
+\end_inset
+
+是同伦等价性映射时, 
+\begin_inset Formula $g^{\bullet}$
+\end_inset
+
+是群同构;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+对偶Hopf空间: 若拓扑空间
+\begin_inset Formula $X$
+\end_inset
+
+存在映射
+\begin_inset Formula $\mu:X\to X\vee X$
+\end_inset
+
+满足条件
+\begin_inset Formula $p_{1}\circ\mu\simeq p_{2}\circ\mu\simeq1_{X}$
+\end_inset
+
+, 则称其为对偶Hopf空间, 记为
+\begin_inset Formula $H'-$
+\end_inset
+
+空间;
+\end_layout
+
+\begin_layout Enumerate
+结合的
+\begin_inset Formula $H'-$
+\end_inset
+
+空间(
+\begin_inset Formula $AH'-$
+\end_inset
+
+空间): 
+\begin_inset Formula $(\mu\vee1_{X})\circ\mu\simeq(1_{X}\vee\mu)\circ\mu:X\to X\vee X\vee X$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+存在逆元的
+\begin_inset Formula $H'-$
+\end_inset
+
+空间(
+\begin_inset Formula $H'I-$
+\end_inset
+
+空间): 如果存在逆运算
+\begin_inset Formula $v:X\to X$
+\end_inset
+
+满足
+\begin_inset Formula $\nabla_{X}\circ(v\vee1_{X})\circ\mu\simeq\nabla_{X}\circ(1_{X}\vee v)\circ\mu\simeq e_{X}$
+\end_inset
+
+, 则称其为存在逆元的
+\begin_inset Formula $H'-$
+\end_inset
+
+空间;
+\end_layout
+
+\begin_layout Enumerate
+若X为
+\begin_inset Formula $AH'I-$
+\end_inset
+
+空间, 
+\begin_inset Formula $Y$
+\end_inset
+
+是任一拓扑空间, 则
+\begin_inset Formula $[X,Y]$
+\end_inset
+
+可赋予群结构.
+ 由任何连续映射
+\begin_inset Formula $g:Y_{0}\to Y_{1}$
+\end_inset
+
+诱导的
+\begin_inset Formula $g_{\bullet}:[X,Y_{0}]\to[X,Y_{1}]$
+\end_inset
+
+是群同态.
+ 特别的, 当
+\begin_inset Formula $g:Y_{0}\simeq Y_{1}$
+\end_inset
+
+是同伦等价性映射是, 
+\begin_inset Formula $g_{\bullet}$
+\end_inset
+
+为群同构;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S^{1}$
+\end_inset
+
+是
+\begin_inset Formula $AH'I-$
+\end_inset
+
+空间;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\pi_{1}(Y)=[S^{1},Y]$
+\end_inset
+
+具有群结构;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $X,Y$
+\end_inset
+
+是拓扑空间:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $X,Y$
+\end_inset
+
+之一为
+\begin_inset Formula $AH'I-$
+\end_inset
+
+空间, 则
+\begin_inset Formula $X\wedge Y$
+\end_inset
+
+是
+\begin_inset Formula $AH'I-$
+\end_inset
+
+空间;
+\end_layout
+
+\begin_layout Enumerate
+如果
+\begin_inset Formula $X$
+\end_inset
+
+是Hausdorff空间, 那么
+\begin_inset Formula $Y^{X}$
+\end_inset
+
+是
+\begin_inset Formula $AHI-$
+\end_inset
+
+空间, 当且仅当
+\begin_inset Formula $X$
+\end_inset
+
+为
+\begin_inset Formula $AH'I-$
+\end_inset
+
+空间或
+\begin_inset Formula $Y$
+\end_inset
+
+为
+\begin_inset Formula $AHI-$
+\end_inset
+
+空间;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $X_{1},X_{2}$
+\end_inset
+
+都是
+\begin_inset Formula $AH'I-$
+\end_inset
+
+空间, 则
+\begin_inset Formula $[X_{1}\wedge X_{2},Y]$
+\end_inset
+
+是交换群;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+当
+\begin_inset Formula $n\ge2$
+\end_inset
+
+时, 
+\begin_inset Formula $\pi_{n}(Y)$
+\end_inset
+
+是交换群;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+映射锥: 设
+\begin_inset Formula $X,Y$
+\end_inset
+
+是拓扑空间, 将其中的
+\begin_inset Formula $X$
+\end_inset
+
+看作约化角锥
+\begin_inset Formula $c(X)$
+\end_inset
+
+的子空间, 
+\begin_inset Formula $X\tilde{=}\{x\wedge0|x\in X\}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+其中记号
+\begin_inset Formula $x\wedge y$
+\end_inset
+
+表示等价类
+\begin_inset Formula $[(x,y)]\in(X\times Y)/(X\vee Y)=X\wedge Y$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+正合序列: 设含入映射
+\begin_inset Formula $i:Y\to E$
+\end_inset
+
+, 令
+\begin_inset Formula $f'=\pi_{f}\circ i:Y\to C_{f}$
+\end_inset
+
+, 对于任何拓扑空间
+\begin_inset Formula $Z$
+\end_inset
+
+, 序列
+\begin_inset Formula $[C_{f},Z]\xrightarrow{(f')^{\bullet}}[Y,Z]\xrightarrow{f^{\bullet}}[X,Z]$
+\end_inset
+
+是正合的;
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1752 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+黎曼几何
+\end_layout
+
+\begin_layout Enumerate
+度规张量: 设
+\begin_inset Formula $M$
+\end_inset
+
+为
+\begin_inset Formula $m-$
+\end_inset
+
+维光滑流形, 切空间
+\begin_inset Formula $T_{p}M$
+\end_inset
+
+中的内积是一个非退化且正定的对称双线型
+\begin_inset Formula $g_{p}:T_{p}M\times T_{p}M\to\mathbb{R}$
+\end_inset
+
+.
+ 当
+\begin_inset Formula $g_{p}$
+\end_inset
+
+满足下列性质时, 称其为流形
+\begin_inset Formula $M$
+\end_inset
+
+的一个度规张量: 
+\begin_inset Formula $\forall U,V\in T_{p}M$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+对称性: 
+\begin_inset Formula $g_{p}(U,V)=g_{p}(V,U)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+正定性: 
+\begin_inset Formula $g_{p}(U,U)\ge0$
+\end_inset
+
+, 等号仅当
+\begin_inset Formula $U=0$
+\end_inset
+
+时成立;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+伪黎曼度规: 
+\begin_inset Formula $g_{p}(U,V)=0,\forall U\Rightarrow V=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+度规的性质: 
+\begin_inset Formula $g_{p}(U,V)$
+\end_inset
+
+定义了线性泛函
+\begin_inset Formula $T_{p}M\to\mathbb{R}$
+\end_inset
+
+, 可看成余切空间的元
+\begin_inset Formula $\omega_{U}\in T_{p}^{*}M$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $<\omega_{U},V>=g_{p}(U,V),\forall V\in T_{p}M$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $U\xmapsto{g_{p}}\omega_{U},g_{p}:T_{p}M\cong T_{p}^{*}M,g_{p}\in\mathcal{T}_{p}(M)_{2}^{0}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+分量: 
+\begin_inset Formula $g_{p}=g_{\mu\nu}(p)dx^{\mu}\otimes dx^{\nu}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{\mu\nu}(p)=g_{p}\left(\frac{\partial}{\partial x^{\mu}},\frac{\partial}{\partial x^{\nu}}\right)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+无穷小距离: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+欧几里得空间的无穷小距离: 相邻两点
+\begin_inset Formula $\vec{y},\vec{y}+d\vec{y}$
+\end_inset
+
+定义了无穷小距离
+\begin_inset Formula $ds^{2}=d\vec{y}^{2}=\delta_{ij}dy^{i}dy^{j}=g_{ij}(x)dx^{i}dx^{j}$
+\end_inset
+
+, 其中
+\begin_inset Formula $g_{ij}=\delta_{kl}\frac{\partial y^{k}}{\partial x^{i}}\frac{\partial y^{l}}{\partial x^{j}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+流形上的无穷小距离: 在
+\begin_inset Formula $m$
+\end_inset
+
+维微分流形
+\begin_inset Formula $M$
+\end_inset
+
+的
+\begin_inset Formula $p$
+\end_inset
+
+点附近覆盖以坐标片
+\begin_inset Formula $U\cong\mathbb{R}^{m}$
+\end_inset
+
+, 局部坐标系
+\begin_inset Formula $x^{\mu}$
+\end_inset
+
+下可引进
+\begin_inset Formula $p$
+\end_inset
+
+到其临近点的无穷小距离
+\begin_inset Formula $ds^{2}=g_{\mu\nu}(x)dx^{\mu}dx^{\nu}$
+\end_inset
+
+.
+ 非退化条件为
+\begin_inset Formula $\begin{cases}
+[g_{\mu\nu}]\texttt{正定} & Riemannian\\
+\det[g_{\mu\nu}]\neq0 & pseudo
+\end{cases}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+无穷小变换: 在
+\begin_inset Formula $m$
+\end_inset
+
+维微分流形
+\begin_inset Formula $M$
+\end_inset
+
+的
+\begin_inset Formula $p$
+\end_inset
+
+点附近, 覆盖另一个坐标片
+\begin_inset Formula $U'$
+\end_inset
+
+, 有坐标变换
+\begin_inset Formula $x^{\mu}\to x'^{\mu}=x'^{\mu}(x)$
+\end_inset
+
+.
+ 由
+\begin_inset Formula $ds^{2}=g'_{\mu\nu}(x')dx'^{\mu}dx'^{\nu}$
+\end_inset
+
+, 其中
+\begin_inset Formula $g_{\mu\nu}(x)=\frac{\partial x'^{\alpha}}{\partial x^{\mu}}\frac{\partial x'^{\beta}}{\partial x^{\nu}}g'_{\alpha\beta}(x')$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+度规的逆变: 用
+\begin_inset Formula $g^{\mu\nu}$
+\end_inset
+
+表示
+\begin_inset Formula $g_{\mu\nu}$
+\end_inset
+
+的逆矩阵元, 可用
+\begin_inset Formula $g^{\mu\nu}$
+\end_inset
+
+提升张量指标
+\begin_inset Formula $g_{\mu\nu}g^{\nu\lambda}=\delta_{\mu}^{\lambda}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+逆变的无穷小变换: 
+\begin_inset Formula $g'^{\mu\nu}(x')=\frac{\partial x'^{\mu}}{\partial x^{\alpha}}\frac{\partial x'^{\nu}}{\partial x^{\beta}}g^{\alpha\beta}(x)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+欧几里得号差: 在黎曼流形的每一点
+\begin_inset Formula $p$
+\end_inset
+
+处, 总是可以找到适当的坐标系将
+\begin_inset Formula $g_{\mu\nu}$
+\end_inset
+
+对角化为
+\begin_inset Formula $(++...+)$
+\end_inset
+
+, 称黎曼流形的度量有欧几里得号差;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+注意: 通常不能用同一坐标系对角化不同点的
+\begin_inset Formula $g_{\mu\nu}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Lorentz号差: 对于伪黎曼流形
+\begin_inset Formula $(\det g_{\mu\nu}\neq0)$
+\end_inset
+
+, 如果
+\begin_inset Formula $g_{\mu\nu}$
+\end_inset
+
+在每一点均能对角化为
+\begin_inset Formula $\eta_{\mu\nu}=diag(-+...+)$
+\end_inset
+
+, 则称该度量具有Lorentz号差;
+\end_layout
+
+\begin_layout Enumerate
+度规分类: 设
+\begin_inset Formula $(M,g_{\mu\nu})$
+\end_inset
+
+是Lorentzian流形, 向量
+\begin_inset Formula $U\in T_{p}(M)$
+\end_inset
+
+分为:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+类空向量: 
+\begin_inset Formula $g(U,U)=g_{\mu\nu}U^{\mu}U^{\nu}=U^{\mu}U_{\mu}>0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+类光向量: 
+\begin_inset Formula $g(U,U)=U^{\mu}U_{\mu}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+类时向量: 
+\begin_inset Formula $g(U,U)=U^{\mu}U_{\mu}<0$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+曲线的长度: 设
+\begin_inset Formula $c(a)=p$
+\end_inset
+
+, 
+\begin_inset Formula $c(b)=q\in M$
+\end_inset
+
+是曲线
+\begin_inset Formula $c=c_{pq}$
+\end_inset
+
+的端点, 用度量确定的曲线长度
+\begin_inset Formula $l[c_{pq}]=\int_{a}^{b}\sqrt{g_{\mu\nu}(\gamma(t))\frac{d\gamma^{\mu}(t)}{dt}\frac{d\gamma^{\nu}(t)}{dt}}dt$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+参数化: 在
+\begin_inset Formula $(U,\varphi)$
+\end_inset
+
+中将曲线上的点参数化
+\begin_inset Formula $(x^{1},...,x^{m})=\varphi\circ c(t)$
+\end_inset
+
+, 
+\begin_inset Formula $x^{\mu}=\gamma^{\mu}(t)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+黎曼流形
+\begin_inset Formula $(M,g_{\mu\nu})$
+\end_inset
+
+上两点
+\begin_inset Formula $p,q$
+\end_inset
+
+间的距离定义为
+\begin_inset Formula $\inf l[c_{pq}]$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+诱导度规: 设
+\begin_inset Formula $M$
+\end_inset
+
+为
+\begin_inset Formula $m-$
+\end_inset
+
+维流形, 
+\begin_inset Formula $N$
+\end_inset
+
+是一个定义了度量
+\begin_inset Formula $\overset{N}{g_{\alpha\beta}}$
+\end_inset
+
+的
+\begin_inset Formula $n-$
+\end_inset
+
+维流形.
+ 若
+\begin_inset Formula $f:M\hookrightarrow N$
+\end_inset
+
+是子流形
+\begin_inset Formula $M$
+\end_inset
+
+到
+\begin_inset Formula $N$
+\end_inset
+
+的嵌入映射
+\begin_inset Formula $(m\le n)$
+\end_inset
+
+, 拉回映射
+\begin_inset Formula $f^{*}$
+\end_inset
+
+诱导了
+\begin_inset Formula $M$
+\end_inset
+
+中的度量
+\begin_inset Formula $\overset{M}{g}=f^{*}\overset{N}{g}$
+\end_inset
+
+, 分量
+\begin_inset Formula $\overset{M}{g_{\mu\nu}}(x)=\overset{N}{g_{\alpha\beta}}(y)\frac{\partial y^{\alpha}}{\partial x^{\mu}}\frac{\partial y^{\beta}}{\partial x^{\nu}}$
+\end_inset
+
+, 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+AdS空间的诱导度量: 
+\begin_inset Formula $ds^{2}=\frac{r^{2}}{L^{2}}(-dt^{2}+d\vec{x}^{2})+\frac{L^{2}}{r^{2}}dr^{2}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+纳什嵌入定理: 只要
+\begin_inset Formula $N$
+\end_inset
+
+足够大, 任何黎曼流形
+\begin_inset Formula $(M,g_{\mu\nu})$
+\end_inset
+
+都可以“等度量地”嵌入到
+\begin_inset Formula $(\mathbb{R}^{N},\delta_{AB})$
+\end_inset
+
+中, 即
+\begin_inset Formula $\exists f;M\hookrightarrow\mathbb{R}^{N}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{\mu\nu}=(f^{*}\delta)_{\mu\nu}$
+\end_inset
+
+, 特别可取
+\begin_inset Formula $N\le\begin{cases}
+\frac{1}{2}m(3m+11) & M\texttt{紧致}\\
+\frac{1}{2}m(m+1)(3m+11) & M\texttt{非紧致}
+\end{cases}$
+\end_inset
+
+, 
+\begin_inset Formula $m\equiv\dim M$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Whitney嵌入定理: 任何
+\begin_inset Formula $m-$
+\end_inset
+
+维的光滑流形
+\begin_inset Formula $M$
+\end_inset
+
+均可作为子流形嵌入到
+\begin_inset Formula $\mathbb{R}^{2m+1}$
+\end_inset
+
+中, 并且浸入到
+\begin_inset Formula $\mathbb{R}^{2m}$
+\end_inset
+
+中;
+\end_layout
+
+\begin_layout Enumerate
+广义协变性: 物理/几何方程在坐标变换
+\begin_inset Formula $x^{\mu}\to x'^{\mu}$
+\end_inset
+
+下保持形式不变, 实现协变性的方式是用张量场来表达物理/几何量
+\begin_inset Formula $T_{\mu_{1}...\mu_{p}}^{\nu_{1}...\nu_{q}}(x)\to T'_{\mu_{1}...\mu_{p}}^{\nu_{1}...\nu_{q}}(x')$
+\end_inset
+
+
+\begin_inset Formula $=\frac{\partial x^{\sigma_{1}}}{\partial x'^{\mu_{1}}}...\frac{\partial x{}^{\sigma_{p}}}{\partial x'^{\mu_{p}}}\frac{\partial x'^{\nu_{1}}}{\partial x^{\tau_{1}}}...\frac{\partial x'^{\nu_{q}}}{\partial x^{\tau_{q}}}\cdot T_{\sigma_{1}...\sigma_{p}}^{\tau_{1}...\tau_{q}}(x)$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若希望在
+\begin_inset Formula $M$
+\end_inset
+
+中建立微分方程, 需考虑偏微商
+\begin_inset Formula $\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+, 将产生新的指标
+\begin_inset Formula $\mu$
+\end_inset
+
+, 但该指标一般不协变;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+使用协变量的原因: 只需在一个坐标片
+\begin_inset Formula $U\cong\mathbb{R}^{n}$
+\end_inset
+
+中给出
+\begin_inset Formula $T_{\mu_{1}...\mu_{p}}^{\nu_{1}...\nu_{q}}(x)$
+\end_inset
+
+, 其在临近坐标片
+\begin_inset Formula $U'$
+\end_inset
+
+中的行为就完全确定了, 进而可以定义在整个流形
+\begin_inset Formula $M$
+\end_inset
+
+上;
+\end_layout
+
+\begin_layout Enumerate
+联络: 设
+\begin_inset Formula $M$
+\end_inset
+
+上存在一个联络, 
+\begin_inset Formula $\Gamma'_{\nu\lambda}^{\mu}=\frac{\partial x'^{\mu}}{\partial x^{\alpha}}\frac{\partial x^{\beta}}{\partial x'^{\nu}}\frac{\partial x^{\gamma}}{\partial x'^{\lambda}}\Gamma_{\beta\gamma}^{\alpha}-\frac{\partial x^{\alpha}}{\partial x'^{\nu}}\frac{\partial x^{\beta}}{\partial x'^{\lambda}}\frac{\partial^{2}x'^{\mu}}{\partial x^{\alpha}\partial x^{\beta}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+联络的分量
+\begin_inset Formula $\Gamma_{\nu\lambda}^{\mu}$
+\end_inset
+
+在坐标变换
+\begin_inset Formula $x^{\mu}\to x'^{\mu}$
+\end_inset
+
+下将出现非齐次项, 因此不是协变的张量;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+协变导数: 在
+\begin_inset Formula $M$
+\end_inset
+
+上给定一个联络时, 可以把非协变量
+\begin_inset Formula $V_{,\nu}^{\mu}$
+\end_inset
+
+与
+\begin_inset Formula $\Gamma_{\nu\lambda}^{\mu}$
+\end_inset
+
+作适当的组合
+\begin_inset Formula $\begin{cases}
+V_{,\nu}^{\mu}\to V_{;\nu}^{\mu}\\
+\frac{\partial}{\partial x^{\nu}}\equiv\partial_{\nu}\to\nabla_{\nu}
+\end{cases}$
+\end_inset
+
+, 以抵消破坏协变性的非齐次项.
+ 由此定义协变导数
+\begin_inset Formula $\nabla_{\nu}V^{\mu}=V_{;\nu}^{\mu}$
+\end_inset
+
+
+\begin_inset Formula $\equiv$
+\end_inset
+
+
+\begin_inset Formula $V_{,\nu}^{\mu}+\Gamma_{\nu\lambda}^{\mu}V^{\lambda}$
+\end_inset
+
+
+\begin_inset Formula $=\frac{\partial V^{\mu}}{\partial x^{\nu}}+\Gamma_{\nu\lambda}^{\mu}V^{\lambda}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+余切空间的协变导数: 
+\begin_inset Formula $V_{\mu:\nu}=\nabla_{\nu}V_{\mu}\equiv$
+\end_inset
+
+
+\begin_inset Formula $V_{\mu,\nu}-\Gamma_{\mu,\nu}^{\lambda}V_{\lambda}=\frac{\partial V_{\mu}}{\partial x^{\nu}}-\Gamma_{\nu\mu}^{\lambda}V_{\lambda}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+张量场的协变导数: 
+\begin_inset Formula $\nabla_{\lambda}T_{...\mu...}^{...\nu...}=\partial_{\lambda}T_{...\mu...}^{...\nu...}-...-\Gamma_{\lambda\mu}^{\kappa}T_{...\kappa...}^{...\nu...}-...$
+\end_inset
+
+
+\begin_inset Formula $+...+\Gamma_{\lambda\rho}^{\nu}T_{...\mu...}^{...\rho...}+...$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+仿射联络: 设
+\begin_inset Formula $\mathcal{F}(M),\mathcal{X}(M)$
+\end_inset
+
+分别是流形
+\begin_inset Formula $M$
+\end_inset
+
+上的光滑函数和光滑向量场,组成的空间, 可以抽象地定义仿射联络为满足下面公理的双线型映射
+\begin_inset Formula $\nabla:\mathcal{X}(M)\times\mathcal{X}(M)\to\mathcal{X}(M)$
+\end_inset
+
+, 
+\begin_inset Formula $(X,Y)\mapsto\nabla_{X}Y$
+\end_inset
+
+: 
+\begin_inset Formula $\forall f\in\mathcal{F}(M),X,Y,Z\in\mathcal{X}(M)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\nabla_{X}(Y+Z)=\nabla_{X}Y+\nabla_{X}Z$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\nabla_{(X+Y)}Z=\nabla_{X}Z+\nabla_{Y}Z$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\nabla_{(fX)}Y=f\nabla_{X}Y$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\nabla_{X}(fY)=X[f]Y+f\nabla_{X}Y$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+联络系数: 
+\begin_inset Formula $\forall p\in M$
+\end_inset
+
+, 取坐标片
+\begin_inset Formula $(U,\varphi)$
+\end_inset
+
+, 
+\begin_inset Formula $x=\varphi(p)\in\mathbb{R}^{m}$
+\end_inset
+
+, 并设
+\begin_inset Formula $e_{\mu}=\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+是
+\begin_inset Formula $T_{p}M$
+\end_inset
+
+的坐标基.
+ 
+\begin_inset Formula $m^{3}$
+\end_inset
+
+个联络系数
+\begin_inset Formula $\Gamma_{\mu\nu}^{\gamma}\in\mathcal{F}(M)$
+\end_inset
+
+定义为
+\begin_inset Formula $\nabla_{\mu}e_{\nu}\equiv\nabla_{e_{\mu}}e_{\nu}=\Gamma_{\mu\nu}^{\lambda}e_{\lambda}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+一旦给出
+\begin_inset Formula $\nabla$
+\end_inset
+
+对基底的作用, 即可确定
+\begin_inset Formula $\nabla_{V}W,\forall V,W\in T_{p}M$
+\end_inset
+
+.
+ 即
+\begin_inset Formula $\nabla_{V}W=\nabla_{(V^{\mu}e_{\mu})}(W^{\nu}e_{\nu})$
+\end_inset
+
+
+\begin_inset Formula $=V^{\mu}\nabla_{e_{\mu}}(W^{\nu}e_{\nu})$
+\end_inset
+
+
+\begin_inset Formula $=V^{\mu}(e_{\mu}[W^{\nu}]e_{\nu}+W^{\nu}\Gamma_{\mu\nu}^{\lambda}e_{\lambda})$
+\end_inset
+
+
+\begin_inset Formula $=V^{\mu}\left(\frac{\partial W^{\lambda}}{\partial x^{\mu}}+\Gamma_{\mu\nu}^{\lambda}W^{\nu}\right)e_{\lambda}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+协变量的分量形式: 
+\begin_inset Formula $\nabla_{\mu}W^{\lambda}\equiv\frac{\partial W^{\lambda}}{\partial x^{\mu}}+\Gamma_{\mu\nu}^{\lambda}W^{\nu}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Leibnitz法则: 
+\begin_inset Formula $\forall f\in\mathcal{F}(M)$
+\end_inset
+
+, 令
+\begin_inset Formula $\nabla_{X}f=X[f]$
+\end_inset
+
+, 则有
+\begin_inset Formula $\nabla_{X}(f\cdot Y)=\nabla_{X}f\cdot Y+f\cdot\nabla_{X}Y$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+推广到一般张量: 
+\begin_inset Formula $\nabla_{X}(T_{1}\otimes T_{2})=(\nabla_{X}T_{1})\otimes T_{2}+T_{1}\otimes(\nabla_{X}T_{2})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+分量形式: 
+\begin_inset Formula $\nabla_{\mu}(T_{...\nu...}^{...\lambda...}\cdot\tilde{T}_{...\kappa...}^{...\rho...})=(\nabla_{\mu}T_{...\nu...}^{...\lambda...})\cdot\tilde{T}_{...\kappa...}^{...\rho...}+T_{...\nu...}^{...\lambda...}\cdot\nabla_{\mu}\tilde{T}_{...\kappa...}^{...\rho...}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+不同坐标片
+\begin_inset Formula $U\cap V\neq\phi$
+\end_inset
+
+中的联络系数变换关系: 
+\begin_inset Formula $x^{\mu}\to x'^{\mu}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $e_{\mu}=\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+, 
+\begin_inset Formula $e'_{\mu}=\frac{\partial}{\partial x'^{\mu}}$
+\end_inset
+
+
+\begin_inset Formula $=\frac{\partial x^{\alpha}}{\partial x'^{\mu}}\frac{\partial}{\partial x^{\alpha}}$
+\end_inset
+
+
+\begin_inset Formula $=\frac{\partial x^{\alpha}}{\partial x'^{\mu}}e_{\alpha}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\nabla_{e'_{\mu}}e'_{\nu}=\Gamma'_{\mu\nu}^{\lambda}e'_{\lambda}=\frac{\partial x^{\gamma}}{\partial x'^{\lambda}}\Gamma'_{\mu\nu}^{\lambda}e_{\gamma}$
+\end_inset
+
+, 且
+\begin_inset Formula $\nabla_{e'_{\mu}}e'_{\nu}=\frac{\partial x^{\alpha}}{\partial x'^{\mu}}\nabla_{e_{\alpha}}\left(\frac{\partial x^{\alpha}}{\partial x'^{\nu}}e_{\beta}\right)$
+\end_inset
+
+
+\begin_inset Formula $=\frac{\partial x^{\alpha}}{\partial x'^{\mu}}\frac{\partial x^{\beta}}{\partial x'^{\nu}}\nabla_{e_{\alpha}}e_{\beta}+\frac{\partial^{2}x^{\beta}}{\partial x'^{\mu}\partial x'^{\nu}}e_{\beta}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Gamma'_{\mu\nu}^{\lambda}=\frac{\partial x'^{\lambda}}{\partial x^{\gamma}}\frac{\partial x^{\alpha}}{\partial x'^{\mu}}\frac{\partial x^{\beta}}{\partial x'^{\nu}}\Gamma_{\alpha\beta}^{\gamma}+\frac{\partial x'^{\lambda}}{\partial x^{\gamma}}\frac{\partial^{2}x^{\gamma}}{\partial x'^{\mu}\partial x'^{\nu}}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+方向导数: 对于欧式空间
+\begin_inset Formula $M=\mathbb{M}^{m}$
+\end_inset
+
+, 此时
+\begin_inset Formula $T_{p}M\cong M$
+\end_inset
+
+, 即流形上的点
+\begin_inset Formula $x\in M$
+\end_inset
+
+和切向量
+\begin_inset Formula $X,Y\in T_{p}M$
+\end_inset
+
+都是
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+中的向量.
+ 方向导数定义为
+\begin_inset Formula $\nabla_{X}Y=\lim\limits _{\epsilon\to0}\frac{Y(x+\epsilon X)-Y(x)}{\epsilon}=X^{\mu}\partial_{\mu}(Y^{\nu})\partial_{\nu}$
+\end_inset
+
+, 其是
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+上的联络;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+特别的有: 
+\begin_inset Formula $\Gamma_{\mu\nu}^{\lambda}e_{\lambda}=\nabla_{e_{\mu}}e_{\nu}=0$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $\Gamma_{\mu\nu}^{\lambda}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+推论: 
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+上存在零联络
+\begin_inset Formula $\Gamma_{\mu\nu}^{\lambda}=0$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+平行: 设
+\begin_inset Formula $c:[a,b]\to M$
+\end_inset
+
+, 
+\begin_inset Formula $t\mapsto c(t)$
+\end_inset
+
+是
+\begin_inset Formula $M$
+\end_inset
+
+中连结
+\begin_inset Formula $p=c(a)$
+\end_inset
+
+和
+\begin_inset Formula $q=c(b)$
+\end_inset
+
+的一条光滑曲线, 取坐标片
+\begin_inset Formula $(U,\varphi)$
+\end_inset
+
+, 曲线的参数方程为
+\begin_inset Formula $x^{\mu}=\gamma^{\mu}(t)$
+\end_inset
+
+, 其中
+\begin_inset Formula $\begin{cases}
+(\gamma^{1}(t),...,\gamma^{m}(t))\equiv\varphi\circ c(t)\\
+\gamma^{\mu}(a)=p^{\mu}\\
+\gamma^{\mu}(b)=q^{\mu}
+\end{cases}$
+\end_inset
+
+, 切向量满足
+\begin_inset Formula $\begin{cases}
+\dot{\gamma}(t)=\dot{\gamma}^{\mu}\left.\frac{\partial}{\partial x^{\mu}}\right|_{c(t)}\\
+\dot{\gamma}^{\mu}=\frac{d\gamma^{\mu}(t)}{dt}=\frac{dx^{\mu}}{dt}
+\end{cases}$
+\end_inset
+
+.
+ 若
+\begin_inset Formula $X$
+\end_inset
+
+满足
+\begin_inset Formula $\begin{cases}
+\nabla_{\dot{\gamma}(t)}X=0 & \forall t\in[a,b]\\
+\dot{\gamma}^{\mu}(t)\left(\frac{\partial X^{\lambda}}{\partial x^{\mu}}+\Gamma_{\mu\nu}^{\lambda}X^{\nu}\right)=0 & \Rightarrow\frac{d}{dt}X^{\lambda}(x)+\Gamma_{\mu\nu}^{\lambda}(x)\frac{dx^{\mu}}{dt}X^{\nu}(x)=0
+\end{cases}$
+\end_inset
+
+, 
+\begin_inset Formula $x^{\mu}=\gamma^{\mu}(t)$
+\end_inset
+
+, 则称
+\begin_inset Formula $M$
+\end_inset
+
+上的向量场
+\begin_inset Formula $X$
+\end_inset
+
+沿着曲线
+\begin_inset Formula $c(t)$
+\end_inset
+
+是平行的;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $\gamma:[a,b]\to M$
+\end_inset
+
+是任意的光滑曲线, 
+\begin_inset Formula $\forall t_{0}\in[a,b]$
+\end_inset
+
+以及
+\begin_inset Formula $X_{0}\in T_{\gamma(t_{0})}M$
+\end_inset
+
+, 存在唯一的沿
+\begin_inset Formula $\gamma$
+\end_inset
+
+平行向量场
+\begin_inset Formula $X$
+\end_inset
+
+满足条件
+\begin_inset Formula $X(\gamma(t_{0}))=X_{0}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+平行移动: 
+\begin_inset Formula $P_{t_{0},t}^{\gamma}:T_{\gamma(t_{0})}M\to T_{\gamma(t)}M$
+\end_inset
+
+, 
+\begin_inset Formula $X_{0}=X(\gamma(t_{0}))\mapsto X(\gamma(t))$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P_{t_{0},t}^{\gamma}$
+\end_inset
+
+是线性映射;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{t_{0},t}^{\gamma}$
+\end_inset
+
+是可逆映射: 
+\begin_inset Formula $P_{t_{0},t}^{\gamma}\circ P_{a+b-t,a+b-t_{0}}^{-\gamma}=1$
+\end_inset
+
+, 
+\begin_inset Formula $(-\gamma)(s)\equiv\gamma(a+b-s)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $\gamma:[a,b]\to M$
+\end_inset
+
+是一条光滑曲线, 满足
+\begin_inset Formula $\gamma(t_{0})=p$
+\end_inset
+
+及
+\begin_inset Formula $\dot{\gamma}(t_{0})=X_{0}\in T_{p}M$
+\end_inset
+
+, 则对于任意向量场
+\begin_inset Formula $Y\in\mathcal{X}(M)$
+\end_inset
+
+, 有
+\begin_inset Formula $\nabla_{X_{0}}Y(p)=\lim\limits _{t\to t_{0}}\frac{(P_{t_{0},t}^{\gamma})^{-1}[Y(\gamma(t))]-Y(\gamma(t_{0}))}{t-t_{0}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+测地线: 
+\begin_inset Formula $x^{\mu}=\gamma^{\mu}(t)$
+\end_inset
+
+的切向量
+\begin_inset Formula $V=\dot{\gamma}(t)$
+\end_inset
+
+沿着曲线处处平行
+\begin_inset Formula $\nabla_{V}V=0$
+\end_inset
+
+, 即
+\begin_inset Formula $\frac{d^{2}x^{\lambda}}{dt^{2}}+\Gamma_{\mu\nu}^{\lambda}(x)\frac{dx^{\mu}}{dt}\frac{dx^{\nu}}{dt}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+向量的夹角: 内积
+\begin_inset Formula $g_{p}(U,V)=g_{\mu\nu}U^{\mu}V^{\nu}$
+\end_inset
+
+确定向量
+\begin_inset Formula $U,V\in T_{p}M$
+\end_inset
+
+的夹角;
+\end_layout
+
+\begin_layout Enumerate
+与度量相容的平行移动: 与度量相容的平行移动应保持夹角不变, 即若
+\begin_inset Formula $\nabla_{\dot{\gamma}}U=\nabla_{\dot{\gamma}}V=0$
+\end_inset
+
+, 则
+\begin_inset Formula $\nabla_{\dot{\gamma}}[g(U,V)]=0$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $\nabla_{\lambda}g_{\mu\nu}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+与度量相容的联络系数: 
+\begin_inset Formula $g_{\mu\nu,\lambda}-\Gamma_{\lambda\mu}^{\rho}g_{\rho\nu}-\Gamma_{\lambda\nu}^{\rho}g_{\mu\rho}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Christoffel记号: 
+\begin_inset Formula $\left\{ \ _{\mu\ \nu}^{\ \kappa}\right\} =\frac{1}{2}g^{\kappa\lambda}(g_{\lambda\nu,\mu}+g_{\lambda\mu,\nu}-g_{\mu\nu,\lambda})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+联络系数对称化和反称化: 
+\begin_inset Formula $\begin{cases}
+\Gamma_{(\mu\nu)}^{\rho}\equiv\frac{1}{2}(\Gamma_{\mu\nu}^{\rho}+\Gamma_{\nu\mu}^{\rho})\\
+\Gamma_{[\mu\nu]}^{\rho}\equiv\frac{1}{2}(\Gamma_{\mu\nu}^{\rho}-\Gamma_{\nu\mu}^{\rho})
+\end{cases}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+挠率张量: 联络系数的反称部分被称为挠率张量, 是一个协变量.
+ 
+\begin_inset Formula $T_{\mu\nu}^{\rho}\equiv2\Gamma_{[\mu\nu]}^{\rho}=\Gamma_{\mu\nu}^{\rho}-(\mu\leftrightarrow\nu)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+挠率: 
+\begin_inset Formula $T:\mathcal{X}(M)\times\mathcal{X}(M)\to\mathcal{X}(M)$
+\end_inset
+
+, 定义为
+\begin_inset Formula $T(X,Y)=\nabla_{X}Y-\nabla_{Y}X-[X,Y],\forall X,Y\in\mathcal{X}(M)$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+挠率的分量: 
+\begin_inset Formula $T_{\mu\nu}^{\lambda}=\left<dx^{\lambda},T(e_{\mu},e_{\nu})\right>$
+\end_inset
+
+, 为
+\begin_inset Formula $(2,1)-$
+\end_inset
+
+型张量;
+\end_layout
+
+\begin_layout Enumerate
+挠率张量
+\begin_inset Formula $T_{\mu\nu}^{\lambda}$
+\end_inset
+
+是挠率
+\begin_inset Formula $T$
+\end_inset
+
+在标准基底下的分量;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Contorsion张量: 
+\begin_inset Formula $K_{\mu\nu}^{\kappa}\equiv\frac{1}{2}(T_{\ \mu\nu}^{\kappa}+T_{\mu\ \nu}^{\ \kappa}+T_{\nu\ \mu}^{\ \kappa})$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+联络系数可表示为
+\begin_inset Formula $\Gamma_{\mu\nu}^{\kappa}=\left\{ \ _{\mu\ \nu}^{\ \kappa}\right\} +K_{\mu\nu}^{\kappa}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Levi-Civita联络: 当联络系数下指标对称时, 挠率为零(进而Contorsion张量为零), 这时与度量相容的联络为Levi-Civita联络.
+ 其联络系数等于Christoffel记号
+\begin_inset Formula $\Gamma_{\mu\nu}^{\kappa}=\{\ _{\mu\ \nu}^{\ \kappa}\}=\frac{1}{2}g^{\kappa\lambda}(g_{\lambda\mu,\nu}+g_{\lambda\nu,\mu}-g_{\mu\nu,\lambda})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+曲线长度: 连结
+\begin_inset Formula $M$
+\end_inset
+
+上
+\begin_inset Formula $p,q$
+\end_inset
+
+两点的曲线
+\begin_inset Formula $x^{\mu}=x^{\mu}(t)$
+\end_inset
+
+的长度为
+\begin_inset Formula $l[x]=\int_{a}^{b}\sqrt{g_{\mu\nu}(x(t))\frac{dx^{\mu}(t)}{dt}\frac{dx^{\nu}(t)}{dt}}dt$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+最短程线: 由变分原理
+\begin_inset Formula $\frac{\delta l[x]}{\delta x^{\lambda}}=0$
+\end_inset
+
+给出, 即
+\begin_inset Formula $\frac{d^{2}x^{\kappa}}{ds^{2}}+\{\ _{\mu\ \nu}^{\ \kappa}\}\frac{dx^{\mu}}{ds}\frac{dx^{\nu}}{ds}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+测地线方程中将
+\begin_inset Formula $\Gamma_{\mu\nu}^{\kappa}$
+\end_inset
+
+取Levi-Civita联络;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+曲率: 流形
+\begin_inset Formula $M$
+\end_inset
+
+的取率定义为
+\begin_inset Formula $R:\mathcal{X}(M)\times\mathcal{X}(M)\times\mathcal{X}(M)\to\mathcal{X}(M)$
+\end_inset
+
+, 即
+\begin_inset Formula $R(X,Y,Z)=\nabla_{X}\nabla_{Y}Z-\nabla_{Y}\nabla_{X}Z-\nabla_{[X,Y]}Z$
+\end_inset
+
+
+\begin_inset Formula $=[\nabla_{X},\nabla_{Y}]Z-\nabla_{[X,Y]}Z$
+\end_inset
+
+, 
+\begin_inset Formula $\forall X,Y,Z\in\mathcal{X}(M)$
+\end_inset
+
+.
+ 曲率张量可以描述空间的弯曲程度;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+曲率
+\begin_inset Formula $R$
+\end_inset
+
+是张量, 具有多重线性
+\begin_inset Formula $R(fX,gY,hZ)=fghR(X,Y,Z)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+曲率张量的分量: 
+\begin_inset Formula $R(X,Y,Z)=X^{\mu}Y^{\nu}Z^{\lambda}R(e_{\mu},e_{\nu},e_{\lambda})\equiv X^{\mu}Y^{\nu}Z^{\lambda}R_{\lambda\mu\nu}^{\kappa}e_{\kappa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+曲率为
+\begin_inset Formula $(1,3)-$
+\end_inset
+
+型张量, 可展开为联络的导数与二次项的组合
+\begin_inset Formula $R_{\lambda\mu\nu}^{\kappa}=\partial_{\mu}\Gamma_{\nu\lambda}^{\kappa}-\partial_{\nu}\Gamma_{\mu\lambda}^{\kappa}+\Gamma_{\mu\rho}^{\kappa}\Gamma_{\nu\lambda}^{\rho}-\Gamma_{\nu\rho}^{\kappa}\Gamma_{\mu\lambda}^{\rho}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ricci张量: 一种
+\begin_inset Formula $(0,2)-$
+\end_inset
+
+型张量, 定义为
+\begin_inset Formula $Ric(X,Y)=<dx^{\kappa},R(e_{\kappa},Y,X)>$
+\end_inset
+
+, 
+\begin_inset Formula $R_{\mu\nu}=Ric(e_{\mu},e_{\nu})$
+\end_inset
+
+
+\begin_inset Formula $=R_{\mu\kappa\nu}^{\kappa}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+标量曲率: 
+\begin_inset Formula $R=g^{\mu\nu}Ric(e_{\mu},e_{\nu})=g^{\mu\nu}R_{\mu\nu}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+等度量群: 设
+\begin_inset Formula $(M,g_{\mu\nu})$
+\end_inset
+
+是黎曼流形, 
+\begin_inset Formula $f\in Diff(M)$
+\end_inset
+
+.
+ 等度量群是微分同胚群的一个子群
+\begin_inset Formula $Isom(M):=\{f\in Diff(M)|(f^{*}g)_{\mu\nu}=g_{\mu\nu}\}$
+\end_inset
+
+.
+ 其中
+\begin_inset Formula $\begin{cases}
+f^{\mu}(x)\approx x^{\mu}+\xi^{\mu}(x)+...\in Diff_{0}(M) & \xi\in\mathcal{X}(M)\\
+(f^{*}g)\approx g_{\mu\nu}+(\mathcal{L}_{\xi}g)_{\mu\nu}+...
+\end{cases}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Killing矢量: 生成等度量群的向量为Killing矢量, 
+\begin_inset Formula $(\mathcal{L_{\xi}}g)_{\mu\nu}=0$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\nabla_{\mu}\xi_{\nu}+\nabla_{\nu}\xi_{\mu}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+共形Killing矢量方程: 在流形
+\begin_inset Formula $M_{d+1}$
+\end_inset
+
+中, 当时空变换
+\begin_inset Formula $f\in Diff(M_{d+1})$
+\end_inset
+
+由无穷小向量场
+\begin_inset Formula $\xi$
+\end_inset
+
+(称为共形Killing矢量场)生成时, 有
+\begin_inset Formula $\delta_{\xi}g_{ab}\equiv(f^{*}g)_{ab}-g_{ab}=-(\nabla_{a}\xi_{b}+\nabla_{b}\xi_{a})+O(\xi^{2})$
+\end_inset
+
+.
+ 若时空变换对度量产生了一个Weyl因子
+\begin_inset Formula $e^{2\omega}$
+\end_inset
+
+, 则
+\begin_inset Formula $(f^{*}g)_{ab}-g_{ab}$
+\end_inset
+
+
+\begin_inset Formula $=(e^{2\omega}-1)\cdot g_{ab}$
+\end_inset
+
+
+\begin_inset Formula $=2\omega\cdot g_{ab}+O(\omega^{2})$
+\end_inset
+
+.
+ 生成边界时空对称性的向量场
+\begin_inset Formula $\xi$
+\end_inset
+
+应满足共形Killing矢量方程
+\begin_inset Formula $\nabla_{a}\xi_{b}+\nabla_{b}\xi_{a}=-2\omega\cdot g_{ab}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+\nabla^{a}\xi_{a}=-(d+1)\cdot\omega\\
+\nabla_{a}\xi_{b}+\nabla_{b}\xi_{a}-\frac{2}{d+1}(\nabla^{c}\xi_{c})g_{ab}=0
+\end{cases}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+共形平坦: 对于黎曼流形
+\begin_inset Formula $M$
+\end_inset
+
+, 如果存在坐标系使得其中的度量分量
+\begin_inset Formula $g_{\mu\nu}(x)=\rho(x)\eta_{\mu\nu}$
+\end_inset
+
+, 则称黎曼流形
+\begin_inset Formula $M$
+\end_inset
+
+是共形平坦的;
+\end_layout
+
+\begin_layout Enumerate
+活动标架基: 设
+\begin_inset Formula $M$
+\end_inset
+
+是一个
+\begin_inset Formula $m-$
+\end_inset
+
+维黎曼流形, 其在
+\begin_inset Formula $p$
+\end_inset
+
+点的切空间
+\begin_inset Formula $T_{p}M$
+\end_inset
+
+的坐标基为
+\begin_inset Formula $e_{\mu}=\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+.
+ 用可逆矩阵转动这些基, 可得新的基底
+\begin_inset Formula $\hat{e}_{a}=e_{a}^{\mu}e_{\mu}=e_{a}^{\mu}\frac{\partial}{\partial x^{\mu}}$
+\end_inset
+
+, 其中
+\begin_inset Formula $[e_{a}^{\mu}]\in GL[m,\mathbb{R}],\det[e_{a}^{\mu}]>0$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+活动标架的度规: 
+\begin_inset Formula $g(\hat{e_{a}},\hat{e}_{b})=e_{a}^{\mu}e_{b}^{\nu}g(\frac{\partial}{\partial x^{\mu}},\frac{\partial}{\partial x^{\nu}})$
+\end_inset
+
+
+\begin_inset Formula $=g_{\mu\nu}e_{a}^{\mu}e_{b}^{\nu}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+活动标架的仿射联络: 
+\begin_inset Formula $\Gamma_{ab}^{c}=e_{a}^{\mu}e_{\lambda}^{c}(\partial_{\mu}e_{b}^{\lambda}+\Gamma_{\mu\nu}^{\lambda}e_{b}^{\nu})$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+标架基下的挠率: 
+\begin_inset Formula $T_{ab}^{c}=e_{\lambda}^{c}T_{\mu\nu}^{\lambda}e_{a}^{\mu}\hat{e_{b}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+标架基下的曲率张量分量: 
+\begin_inset Formula $R_{bcd}^{a}=e_{\rho}^{a}R_{\lambda\mu\nu}^{\rho}e_{b}^{\lambda}e_{c}^{\mu}e_{d}^{\nu}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Cartan结构方程: 
+\begin_inset Formula $\begin{cases}
+d\theta^{a}+\omega_{b}^{a}\wedge\theta^{b}=T^{a}\\
+d\omega_{b}^{a}+\omega_{c}^{a}\wedge\omega_{b}^{c}=R_{b}^{a}
+\end{cases}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+规范对称性: 度量在局部Lorentz转动下不变;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+活动标架的Levi-Civita联络: 
+\begin_inset Formula $\begin{cases}
+metricity & \nabla_{X}g=0\\
+vanishing\ torsion & \Gamma_{\mu\nu}^{\lambda}-\Gamma_{\nu\mu}^{\lambda}=0
+\end{cases}$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma_{ab}^{c}=e_{\lambda}^{c}e_{a}^{\mu}\nabla_{\mu}e_{b}^{\lambda}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+活动标架的变分规则:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\delta_{\theta}\mathbb{V}_{a_{1}...a_{m}}=\delta\theta^{b}\wedge\mathbb{V}_{a_{1}...a_{m}b}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{\omega^{L}}\mathbb{V}_{a_{1}...a_{m}}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta_{\theta}T^{a}=d\delta\theta^{a}+\omega_{b}^{La}\wedge\delta\theta^{b}=D^{L}\delta\theta^{a}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta_{\theta}R^{Lab}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta_{\omega^{L}}T^{a}=\delta\omega_{b}^{La}\wedge\theta^{b}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta_{\omega^{L}}R^{Lab}=d\delta\omega^{Lab}+\delta\omega_{c}^{La}\wedge\omega^{Lcd}$
+\end_inset
+
+, 
+\begin_inset Formula $-\delta\omega^{Lcd}\wedge\omega_{c}^{La}=D^{L}\delta\omega^{Lab}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta_{\theta}\omega=\delta\theta^{a}P_{a}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{\omega^{L}}\omega=\frac{1}{2}\delta\omega^{Lab}M_{ab}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{\theta}\hat{R}=\delta_{\theta}T^{a}P_{a}=D^{L}\delta\theta^{a}P_{a}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta_{\omega^{L}}\hat{R}=\delta\omega_{b}^{La}\wedge\theta^{b}P_{a}+\frac{1}{2}D^{L}\delta\omega^{Lab}M_{ab}$
+\end_inset
+
+.
+ 其中
+\begin_inset Formula $\omega=\theta^{a}P_{a}+\frac{1}{2}\omega^{Lab}M_{ab}$
+\end_inset
+
+为Poincare联络, 
+\begin_inset Formula $\hat{R}:=d\omega+\omega\wedge\omega$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

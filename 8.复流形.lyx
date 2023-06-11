@@ -1,0 +1,254 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+复流形
+\end_layout
+
+\begin_layout Enumerate
+全纯复函数(解析性): 函数
+\begin_inset Formula $f=u(x,y)+iv(x,y)$
+\end_inset
+
+的实部和虚部有适当的光滑性, 并满足柯西-黎曼条件
+\begin_inset Formula $\begin{cases}
+\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}\\
+\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}
+\end{cases}$
+\end_inset
+
+, 则称其为全纯复函数;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+对于全纯复函数
+\begin_inset Formula $f(x,y)$
+\end_inset
+
+, 若
+\begin_inset Formula $z=x+iy$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{z}=x-iy$
+\end_inset
+
+, 则
+\begin_inset Formula $f$
+\end_inset
+
+只依赖
+\begin_inset Formula $z$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+多变量的全纯复函数: 设
+\begin_inset Formula $(z^{1},...,z^{m})\in\mathbb{C}^{m}$
+\end_inset
+
+, 
+\begin_inset Formula $z^{\mu}:=x^{\mu}+iy^{\mu}$
+\end_inset
+
+, 复值函数
+\begin_inset Formula $f=\mu+i\nu:\mathbb{C}^{m}\to\mathbb{C}$
+\end_inset
+
+的全纯性由
+\begin_inset Formula $\begin{cases}
+\frac{\partial\mu}{\partial x^{\mu}}=\frac{\partial\nu}{\partial y^{\mu}}\\
+\frac{\partial\mu}{\partial y^{\mu}}=-\frac{\partial\nu}{\partial x^{\mu}}
+\end{cases}$
+\end_inset
+
+刻画.
+ 若每个分量函数
+\begin_inset Formula $f^{\lambda}(1\le\lambda\le n)$
+\end_inset
+
+都是全纯函数, 则映射
+\begin_inset Formula $(f^{1},...,f^{n}):\mathbb{C}^{m}\to\mathbb{C}^{n}$
+\end_inset
+
+是全纯的;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+复流形: 满足下面条件的流形被称为复流形;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+是拓扑空间, 即其中定义了开集
+\begin_inset Formula $U,V,...$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+上带有一套坐标卡集
+\begin_inset Formula $(U_{i}\varphi_{i})$
+\end_inset
+
+, 其中
+\begin_inset Formula $\{U_{i}\}$
+\end_inset
+
+构成
+\begin_inset Formula $M$
+\end_inset
+
+的一个开覆盖, 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+是从开集
+\begin_inset Formula $U_{i}$
+\end_inset
+
+到
+\begin_inset Formula $\mathbb{C}^{m}$
+\end_inset
+
+中某个开集的同胚映射;
+\end_layout
+
+\begin_layout Enumerate
+在开覆盖中任取有交叠的开集
+\begin_inset Formula $U_{i},U_{j}$
+\end_inset
+
+(即
+\begin_inset Formula $U_{i}\cap U_{j}\neq\phi$
+\end_inset
+
+), 转移函数
+\begin_inset Formula $\psi_{ij}\equiv\varphi_{i}\circ\varphi_{j}^{-1}:\varphi_{j}(U_{i}\cap U_{j})\to\varphi_{i}(U_{i}\cap U_{j})$
+\end_inset
+
+是全纯映射;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+近复结构: 设
+\begin_inset Formula $M$
+\end_inset
+
+是微分流形, 假定其上存在
+\begin_inset Formula $(1,1)$
+\end_inset
+
+型张量场
+\begin_inset Formula $J=J_{B}^{A}(x)\frac{\partial}{\partial\xi^{A}}\otimes d\zeta^{B}$
+\end_inset
+
+, 该类型张量可看作线性算子
+\begin_inset Formula $T_{p}M\xrightarrow{J}T_{p}M$
+\end_inset
+
+, 
+\begin_inset Formula $V=V^{A}\frac{\partial}{\partial\zeta^{A}}\mapsto<J,V>=J_{B}^{A}V^{B}\frac{\partial}{\partial\zeta^{A}}$
+\end_inset
+
+, 则
+\begin_inset Formula $J$
+\end_inset
+
+称为
+\begin_inset Formula $M$
+\end_inset
+
+上的一个近复结构;
+\end_layout
+
+\end_body
+\end_document
